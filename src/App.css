@@ -3,14 +3,25 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: maroon;
+  font-weight: bolder;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-content {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 20;
+  font-size:128px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.text-on-carousel{
+  font-size: 64px;
+  font-weight: bold;
+  color:white
 }
 
 .App-header {
