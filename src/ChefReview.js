@@ -35,7 +35,7 @@ export default function ChefReview() {
           <p className="lead">
             I opened up a momo restaurant in Kathmandu, Nepal. When I moved to
             the US, I wanted to work in the food industry — that's when I found
-            Shef.
+            Feasti.
           </p>
           <div className="text">Deep, Bay Area | Joined in 2019</div>
         </div>

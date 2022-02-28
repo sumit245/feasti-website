@@ -4,7 +4,7 @@ export default function Help() {
   return (
     <div>
       <div className="row mx-2 my-5">
-        <h2 className="text-danger my-4">Help when you need it</h2>
+        <h2 className="text-danger my-4" style={{ fontWeight: "bolder" }}>Help when you need it</h2>
         <div className="col-sm-6 my-4">
           <img
             src="https://cdn.shef.com/static/media/Talk_Icon.a0654cac.svg"
@@ -61,7 +61,7 @@ export default function Help() {
             when designing your food business.
             <br />
             Join our weekly informational calls to learn how to improve your
-            menus and build a successful business on Shef.
+            menus and build a successful business on Feasti.
           </div>
         </div>
       </div>

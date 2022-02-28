@@ -10,7 +10,7 @@ export default function Footer() {
               <a href="/">
                 <img
                   src="https://cdn.shef.com/static/media/white.c498f687.svg"
-                  alt="Shef"
+                  alt="Feasti"
                   className="sc-hzMMCg kRzfai"
                 />
               </a>
@@ -95,7 +95,7 @@ export default function Footer() {
             </ul>
             <ul className="sc-jGVbCA fQDgZz">
               <span className="sc-bQdQlF bLRIRM">
-                <a href="/become-a-shef">Become a Shef</a>
+                <a href="/become-a-shef">Become a Feasti</a>
               </span>
             </ul>
             <ul className="sc-jGVbCA fQDgZz">
@@ -159,7 +159,7 @@ export default function Footer() {
               <a href="/">
                 <img
                   src="https://cdn.shef.com/static/media/white.c498f687.svg"
-                  alt="Shef"
+                  alt="Feasti"
                   className="sc-hzMMCg kRzfai"
                 />
               </a>
@@ -174,7 +174,7 @@ export default function Footer() {
         <div className="sc-biBrSq btbgqN">
           <div className="sc-tYoTV dacGHc">
             <span className="sc-bQdQlF bLRIRM">
-              © Shef, Inc. 2020. All Rights Reserved.
+              © Feasti, Inc. 2020. All Rights Reserved.
             </span>
           </div>
           <div className="sc-tYoTV esPzXd">

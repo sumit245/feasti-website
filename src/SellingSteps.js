@@ -5,7 +5,7 @@ export default function SellingSteps() {
     <div>
       <div className="row mx-1 my-4">
         <h2 className="text-danger my-5" style={{ fontWeight: "bolder" }}>
-          How to sell on Shef
+          How to sell on Feasti
         </h2>
         <div className="col-sm-3">
           <img
@@ -76,7 +76,7 @@ export default function SellingSteps() {
             Prepare your orders
           </h5>
           <div className="text-justify">
-            Customers can start ordering from you on Shef. They’ll order at
+            Customers can start ordering from you on Feasti. They’ll order at
             least a day in advance so you have enough time to get ingredients
             and prepare their dishes.
           </div>
