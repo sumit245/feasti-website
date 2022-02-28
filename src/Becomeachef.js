@@ -1,4 +1,5 @@
 import React from "react";
+import MobileStoreButton from "react-mobile-store-button/lib/MobileStoreButton";
 import Img1 from "./assets/image.webp";
 import ChefReview from "./ChefReview";
 import Header from "./Header";
@@ -8,6 +9,10 @@ import WhatisChef from "./WhatisChef";
 import WhyBecomeChef from "./WhyBecomeChef";
 
 export default function Becomeachef() {
+  const iOSUrl =
+    "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
+  const androidUrl =
+    "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
   return (
     <div>
       <Header />
@@ -19,7 +24,10 @@ export default function Becomeachef() {
             you love
           </h1>
           <p className="lead">
-           <a href='/become-chef/register' className="text-info">Sign up</a>  to be your own boss and cook whenever you want.
+            <a href="/become-chef/register" className="text-info">
+              Sign up
+            </a>{" "}
+            to be your own boss and cook whenever you want.
           </p>
         </div>
         <img
@@ -28,6 +36,27 @@ export default function Becomeachef() {
           className="img-fluid"
           style={{ height: "720px", width: "100%" }}
         />
+        <div
+          style={{
+            position: "absolute",
+            left: "40%",
+            top: "80%",
+            flexDirection: "row",
+          }}
+        >
+          <MobileStoreButton
+            store="ios"
+            height={60}
+            width={166}
+            url={iOSUrl}
+            linkProps={{ title: "Download Feasti" }}
+          />
+          <MobileStoreButton
+            store="android"
+            url={androidUrl}
+            linkProps={{ title: "Download Feasti" }}
+          />
+        </div>
       </div>
       <WhatisChef />
       <WhyBecomeChef />
@@ -36,7 +65,7 @@ export default function Becomeachef() {
       <Help />
       <div className="row mx-2">
         <div>
-          <h2 className="text-center text-danger my-4">Cooking safely</h2>
+          <h2 className="text-danger my-4" style={{fontWeight:"bolder"}} >Cooking safely</h2>
           <img
             src="https://cdn.shef.com/static/media/cooking-safely.7001665c.jpg"
             alt="chef-profile"
