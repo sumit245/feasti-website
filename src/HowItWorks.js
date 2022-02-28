@@ -8,7 +8,7 @@ export default function HowItWorks() {
         <h1 className="text-center">How it works</h1>
       </div>
       <div className="row mt-4 text-center">
-        <div className="col-sm-4 text-center mx-2">
+        <div className="col-sm-4 mx-2 text-center ">
           <img
             src={IMg1}
             className="img-thumbnail"
@@ -22,7 +22,7 @@ export default function HowItWorks() {
             All restaurants are food safety certified <br />
           </p>
         </div>
-        <div className="col-sm-3 mx-2 text-center">
+        <div className="col-sm-4 mx-2 text-center">
           <img
             src={IMg1}
             className="img-thumbnail"
