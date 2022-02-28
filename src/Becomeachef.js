@@ -1,5 +1,5 @@
 import React from "react";
-import Img1 from "./assets/img1.jpeg";
+import Img1 from "./assets/image.webp";
 import ChefReview from "./ChefReview";
 import Header from "./Header";
 import Help from "./Help";
@@ -26,7 +26,7 @@ export default function Becomeachef() {
           src={Img1}
           alt="banner"
           className="img-fluid"
-          style={{ height: "640px", width: "100%" }}
+          style={{ height: "720px", width: "100%" }}
         />
       </div>
       <WhatisChef />
