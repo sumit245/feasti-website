@@ -90,7 +90,7 @@ export default function RegisterForm() {
       </div>
 
       <div className="text-center my-3">
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-danger" style={{borderRadius:40}}>
           Submit
         </button>
       </div>

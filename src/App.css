@@ -6,6 +6,8 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: maroon;
+  text-align: center;
+  font-size: 128;
   font-weight: bolder;
   letter-spacing: -3px;
 }
