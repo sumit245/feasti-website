@@ -3,16 +3,28 @@ import React from "react";
 export default function SellingSteps() {
   return (
     <div>
-      <div className="row mx-1">
-        <h2 className="text-dark mb-5">How to sell on Shef</h2>
+      <div className="row mx-1 my-4">
+        <h2 className="text-danger my-5" style={{ fontWeight: "bolder" }}>
+          How to sell on Shef
+        </h2>
         <div className="col-sm-3">
           <img
             src="https://cdn.shef.com/static/media/step-1.9ada50ca.png"
             className="img-thumbnail"
             alt="step-1"
           />
-          <h2 className="text-justify text-danger">1</h2>
-          <h4 className="text-justify text-dark">Get approved to cook</h4>
+          <h2
+            className="text-justify text-danger my-3"
+            style={{ fontWeight: "bolder" }}
+          >
+            1
+          </h2>
+          <h5
+            className="text-justify text-dark mt-2 mb-3"
+            style={{ fontWeight: "bolder" }}
+          >
+            Get approved to cook
+          </h5>
           <div className="text-justify">
             <a className="text-primary" href="/become-chef/register">
               Sign up
@@ -28,8 +40,18 @@ export default function SellingSteps() {
             className="img-thumbnail"
             alt="step-2"
           />
-          <h2 className="text-justify text-danger">2</h2>
-          <h4 className="text-justify text-dark">Pick your schedule</h4>
+          <h2
+            className="text-justify text-danger my-3"
+            style={{ fontWeight: "bolder" }}
+          >
+            2
+          </h2>
+          <h5
+            className="text-justify text-dark mt-2 mb-3"
+            style={{ fontWeight: "bolder" }}
+          >
+            Pick your schedule
+          </h5>
           <div className="text-justify">
             Choose the days you’d like to cook. As little or as much as you’d
             like.
@@ -41,8 +63,18 @@ export default function SellingSteps() {
             className="img-thumbnail"
             alt="step-3"
           />
-          <h2 className="text-justify text-danger">3</h2>
-          <h4 className="text-justify text-dark">Prepare your orders</h4>
+          <h2
+            className="text-justify text-danger my-3"
+            style={{ fontWeight: "bolder" }}
+          >
+            3
+          </h2>
+          <h5
+            className="text-justify text-dark mt-2 mb-3"
+            style={{ fontWeight: "bolder" }}
+          >
+            Prepare your orders
+          </h5>
           <div className="text-justify">
             Customers can start ordering from you on Shef. They’ll order at
             least a day in advance so you have enough time to get ingredients
@@ -55,8 +87,18 @@ export default function SellingSteps() {
             className="img-thumbnail"
             alt="step-4"
           />
-          <h2 className="text-justify text-danger">5</h2>
-          <h4 className="text-justify text-dark">Serve your customers</h4>
+          <h2
+            className="text-justify text-danger my-3"
+            style={{ fontWeight: "bolder" }}
+          >
+            4
+          </h2>
+          <h5
+            className="text-justify text-dark mt-2 mb-3"
+            style={{ fontWeight: "bolder" }}
+          >
+            Serve your customers
+          </h5>
           <div className="text-justify">
             We’ll help you identify the best delivery method available so your
             customers can get their food safely and on time.¹
