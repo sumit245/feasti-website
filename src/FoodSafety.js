@@ -35,7 +35,7 @@ export default function FoodSafety() {
             <h3 className="text-dark my-4">Trusted by thousands of people</h3>
             <div className="col-sm-10">
               Feasti is used every day by thousands of customers around the
-              United States. We work hard to help our shefs feel taken care of
+              Canada. We work hard to help our shefs feel taken care of
               and supported throughout the entire process.
             </div>
           </div>
