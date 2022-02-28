@@ -11,54 +11,55 @@ export default function Footer() {
       <div className="container-fluid text-md-left">
         <div className="row">
           <div className="col-sm-4">
-            <a href="/" className="App-logo">
+            <a href="/" className="App-logo-big">
               Feasti
             </a>
-            <div>There's No Taste Like Home</div>
+            <div style={{ marginTop: -40, color: "white", letterSpacing: 1,fontFamily:"cursive" }}>
+              There's No Taste Like Home
+            </div>
           </div>
           <div className="col-sm-3">
-            <ul className="">
+            <ul>
               <span className="text-white" style={{ fontWeight: "bold" }}>
                 Follow
               </span>
             </ul>
-            <ul className="">
-              <span className="">
-                <a
-                  href="https://www.facebook.com/feasti"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white"
-                >
-                  Facebook
-                </a>
-              </span>
+            <ul>
+              <a
+                href="https://www.facebook.com/feasti"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-decoration-none"
+              >
+                Facebook
+              </a>
             </ul>
-            <ul className="">
-              <span className="">
+            <ul>
+              <span>
                 <a
-                  href="https://www.instagram.com/ordershef"
+                  href="https://www.instagram.com/feasti"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white"
+                  className="text-white text-decoration-none"
                 >
                   Instagram
                 </a>
               </span>
             </ul>
           </div>
-          <div className="col-sm-2">
-            <ul className="">
+          <div className="col-sm-2 text-justify">
+            <ul>
               <span className="text-white" style={{ fontWeight: "bold" }}>
                 Join
               </span>
             </ul>
-            <ul className="">
-              <span className="">
-                <a href="/become-chef/register" className="text-white">
-                  Become a Feasti
-                </a>
-              </span>
+            <ul>
+              <a
+                href="/become-chef/register"
+                className="text-white text-decoration-none"
+              >
+                Become a Feasti
+              </a>
             </ul>
           </div>
           <div className="col-sm-3 text-center">
@@ -91,19 +92,22 @@ export default function Footer() {
 
       <div className="bg-dark row py-4 mx-0">
         <div className=" col-sm-4">
-          <span className="text-white">
+          <span className="footer-copyright text-white">
             © Feasti, Inc. 2020. All Rights Reserved.
           </span>
         </div>
         <div className="col-sm-2">
-          <a href="/privacy-policy">
-            <span className="text-white">Privacy Policy</span>
+          <a href="/privacy-policy" className="text-white text-decoration-none">
+            Privacy Policy
           </a>
         </div>
         <div className="col-sm-3">
-          <span className="text-white">
-            <a href="/terms-of-service">Terms of Service</a>
-          </span>
+          <a
+            href="/terms-of-service"
+            className="text-white text-decoration-none"
+          >
+            Terms of Service
+          </a>
         </div>
       </div>
     </footer>

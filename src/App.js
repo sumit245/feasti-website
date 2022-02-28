@@ -8,6 +8,8 @@ import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Becomeachef from "./Becomeachef";
 import Register from "./Register";
 import Footer from "./Footer";
+import PrivacyPoilcy from "./PrivacyPoilcy";
+import TermsofService from "./TermsofService";
 
 function Home() {
   return (
@@ -19,7 +21,7 @@ function Home() {
       <div className="row">
         <HowItWorks />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
@@ -32,6 +34,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="become-chef" element={<Becomeachef />} />
           <Route path="/become-chef/register" element={<Register />} />
+          <Route
+            path="/privacy-policy"
+            element={<PrivacyPoilcy />}
+          />
+          <Route
+            path="/terms-of-service"
+            element={<TermsofService />}
+          />
         </Routes>
       </BrowserRouter>
     </React.Fragment>
