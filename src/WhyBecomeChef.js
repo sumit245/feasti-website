@@ -1,14 +1,16 @@
 import React from "react";
-
+import Cash from "./assets/cash_icon.png";
+import Happy from "./assets/yummy.jpg";
+import Boss from "./assets/boss.png";
 export default function WhyBecomeChef() {
   return (
     <div className="row mx-4 my-4">
       <div className="col-lg">
-        <h2 className="text-danger">Why become a shef?</h2>
+        <h2 className="text-danger font-weight-bold my-4">Why join Feasti?</h2>
         <div className="row my-4">
           <div className="col-sm-4">
             <img
-              src="https://cdn.shef.com/static/media/Cash_Icon.73e8e523.svg"
+              src={Cash}
               // className="img-thumbnail"
               alt="cash-outline"
               style={{ height: 160, width: 160, borderRadius: 80 }}
@@ -21,8 +23,7 @@ export default function WhyBecomeChef() {
           </div>
           <div className="col-sm-4">
             <img
-              src="https://cdn.shef.com/static/media/Star_Icon.f434fd06.svg"
-              // className="img-thumbnail"
+              src={Boss}
               alt="star-outline"
               style={{ height: 160, width: 160, borderRadius: 80 }}
             />
@@ -34,8 +35,7 @@ export default function WhyBecomeChef() {
           </div>
           <div className="col-sm-4">
             <img
-              src="https://cdn.shef.com/static/media/Community_Icon.ede07d9a.svg"
-              // className="img-thumbnail"
+              src={Happy}
               alt="building"
               style={{ height: 160, width: 160, borderRadius: 80 }}
             />
