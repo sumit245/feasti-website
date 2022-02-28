@@ -1,5 +1,4 @@
 import React from "react";
-import "./css/style.css";
 import IMg1 from "./assets/img1.jpeg";
 
 export default function HowItWorks() {
