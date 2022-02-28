@@ -7,6 +7,7 @@ import React from "react";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Becomeachef from "./Becomeachef";
 import Register from "./Register";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <div className="row">
         <HowItWorks />
       </div>
+      <Footer/>
     </div>
   );
 }

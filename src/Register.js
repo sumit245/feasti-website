@@ -6,7 +6,7 @@ import WhatisChef from "./WhatisChef";
 import WhyBecomeChef from "./WhyBecomeChef";
 import Img1 from "./assets/img1.jpeg";
 import RegisterForm from "./RegisterForm";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 
 export default function Register() {
   return (
@@ -22,7 +22,7 @@ export default function Register() {
       <WhyBecomeChef />
       <SellingSteps />
       <Help />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

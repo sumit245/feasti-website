@@ -1,192 +1,109 @@
 import React from "react";
+import MobileStoreButton from "react-mobile-store-button/lib/MobileStoreButton";
 
 export default function Footer() {
+  const iOSUrl =
+    "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
+  const androidUrl =
+    "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
   return (
-    <footer>
-      <div className="sc-bZSQDF sc-fXoxut dNioxk bLSmTI">
-        <div className="sc-biBrSq btbgqN">
-          <div className="sc-tYoTV sc-eHfQar dacGHc hhRQON">
-            <ul className="sc-kYrkKh fcJagU">
-              <a href="/">
-                <img
-                  src="https://cdn.shef.com/static/media/white.c498f687.svg"
-                  alt="Feasti"
-                  className="sc-hzMMCg kRzfai"
-                />
-              </a>
-            </ul>
-            <ul className="sc-kYrkKh sc-xyEjG fcJagU cPUXYV">
-              There's No Taste Like Home
-            </ul>
+    <footer className="page-footer font-small bg-danger pt-4">
+      <div className="container-fluid text-md-left">
+        <div className="row">
+          <div className="col-sm-4">
+            <a href="/" className="App-logo">
+              Feasti
+            </a>
+            <div>There's No Taste Like Home</div>
           </div>
-          <div className="sc-tYoTV sc-eFubAy gjeqfa iizEdg">
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-dWdcrH hKxtfS">Learn</span>
-            </ul>
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-bQdQlF bLRIRM">
-                <a href="/gift">Gift Cards</a>
+          <div className="col-sm-3">
+            <ul className="">
+              <span className="text-white" style={{ fontWeight: "bold" }}>
+                Follow
               </span>
             </ul>
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-bQdQlF bLRIRM">
+            <ul className="">
+              <span className="">
                 <a
-                  href="https://shef.zendesk.com/hc/en-us"
+                  href="https://www.facebook.com/feasti"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  Help Center
-                </a>
-              </span>
-            </ul>
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-bQdQlF bLRIRM">
-                <a
-                  href="https://cdn.shef.com/static/media/covid-safety-january-2022.8a614301.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  COVID-19 Safety
-                </a>
-              </span>
-            </ul>
-          </div>
-          <div className="sc-tYoTV sc-eFubAy gjeqfa iizEdg">
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-dWdcrH hKxtfS">Follow</span>
-            </ul>
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-bQdQlF bLRIRM">
-                <a
-                  href="https://www.facebook.com/ordershef"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  className="text-white"
                 >
                   Facebook
                 </a>
               </span>
             </ul>
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-bQdQlF bLRIRM">
+            <ul className="">
+              <span className="">
                 <a
                   href="https://www.instagram.com/ordershef"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-white"
                 >
                   Instagram
                 </a>
               </span>
             </ul>
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-bQdQlF bLRIRM">
-                <a
-                  href="https://twitter.com/ordershef"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Twitter
+          </div>
+          <div className="col-sm-2">
+            <ul className="">
+              <span className="text-white" style={{ fontWeight: "bold" }}>
+                Join
+              </span>
+            </ul>
+            <ul className="">
+              <span className="">
+                <a href="/become-chef/register" className="text-white">
+                  Become a Feasti
                 </a>
               </span>
             </ul>
           </div>
-          <div className="sc-tYoTV sc-eFubAy gjeqfa iizEdg">
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-dWdcrH hKxtfS">Join</span>
-            </ul>
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-bQdQlF bLRIRM">
-                <a href="/become-a-shef">Become a Feasti</a>
+          <div className="col-sm-3 text-center">
+            <ul className="">
+              <span className="text-white" style={{ fontWeight: "bold" }}>
+                Download Links
               </span>
             </ul>
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-bQdQlF bLRIRM">
-                <a href="/careers" rel="noopener noreferrer">
-                  Careers
-                </a>
-              </span>
-            </ul>
-          </div>
-          <div className="sc-tYoTV sc-eFubAy cqhQiW iizEdg">
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-dWdcrH hKxtfS">Secure Payment</span>
-            </ul>
-            <ul className="sc-jGVbCA fQDgZz">
-              <span className="sc-bQdQlF bLRIRM">
-                <div
-                  className="sc-biBrSq btbgqN"
-                  style={{ marginRight: "0px", marginLeft: "0px" }}
-                >
-                  <div className="sc-tYoTV flqshi">
-                    <img
-                      src="https://cdn.shef.com/static/media/visa.f969e708.svg"
-                      alt="Visa"
-                      className="sc-jXktwP hdiogm"
-                    />
-                    <img
-                      src="https://cdn.shef.com/static/media/mastercard.d79d7d61.svg"
-                      alt="Master Card"
-                      className="sc-jXktwP hdiogm"
-                    />
-                    <img
-                      src="https://cdn.shef.com/static/media/jcb.df912e8c.svg"
-                      alt="JCB"
-                      className="sc-jXktwP hdiogm"
-                    />
-                  </div>
-                  <div className="sc-tYoTV flqshi">
-                    <img
-                      src="https://cdn.shef.com/static/media/amex.e2b1d09a.svg"
-                      alt="American Express"
-                      className="sc-jXktwP hdiogm"
-                    />
-                    <img
-                      src="https://cdn.shef.com/static/media/discover.b299c421.svg"
-                      alt="Discover"
-                      className="sc-jXktwP hdiogm"
-                    />
-                    <img
-                      src="https://cdn.shef.com/static/media/diners.daa67d4d.svg"
-                      alt="DINERS"
-                      className="sc-jXktwP hdiogm"
-                    />
-                  </div>
-                </div>
-              </span>
-            </ul>
-          </div>
-          <div className="sc-tYoTV sc-eHfQar NuXWr hhRQON">
-            <ul className="sc-kYrkKh fcJagU">
-              <a href="/">
-                <img
-                  src="https://cdn.shef.com/static/media/white.c498f687.svg"
-                  alt="Feasti"
-                  className="sc-hzMMCg kRzfai"
+            <ul className="">
+              <div className="text-center">
+                <MobileStoreButton
+                  store="ios"
+                  height={60}
+                  width={148}
+                  url={iOSUrl}
+                  linkProps={{ title: "Download Feasti" }}
                 />
-              </a>
-            </ul>
-            <ul className="sc-kYrkKh sc-xyEjG fcJagU cPUXYV">
-              There's No Taste Like Home
+                <MobileStoreButton
+                  store="android"
+                  // height={60}
+                  width={166}
+                  url={androidUrl}
+                  linkProps={{ title: "Download Feasti" }}
+                />
+              </div>
             </ul>
           </div>
         </div>
       </div>
-      <div className="sc-bZSQDF sc-Fyfyc dNioxk fTMjUf">
-        <div className="sc-biBrSq btbgqN">
-          <div className="sc-tYoTV dacGHc">
-            <span className="sc-bQdQlF bLRIRM">
-              © Feasti, Inc. 2020. All Rights Reserved.
-            </span>
-          </div>
-          <div className="sc-tYoTV esPzXd">
-            <a href="/privacy-policy">
-              <span className="sc-bQdQlF bLRIRM">Privacy Policy</span>
-            </a>
-          </div>
-          <div className="sc-tYoTV esPzXd">
-            <span className="sc-bQdQlF bLRIRM">
-              <a href="/terms-of-service">Terms of Service</a>
-            </span>
-          </div>
+
+      <div className="bg-dark row py-4 mx-0">
+        <div className=" col-sm-4">
+          <span className="text-white">
+            © Feasti, Inc. 2020. All Rights Reserved.
+          </span>
+        </div>
+        <div className="col-sm-2">
+          <a href="/privacy-policy">
+            <span className="text-white">Privacy Policy</span>
+          </a>
+        </div>
+        <div className="col-sm-3">
+          <span className="text-white">
+            <a href="/terms-of-service">Terms of Service</a>
+          </span>
         </div>
       </div>
     </footer>
