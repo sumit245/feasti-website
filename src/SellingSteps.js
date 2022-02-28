@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SellingSteps() {
   return (
-    <div>
+    <div className="bg-light py-3">
       <div className="row mx-1 my-4">
         <h2 className="text-danger my-5" style={{ fontWeight: "bolder" }}>
           How to sell on Feasti
