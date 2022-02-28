@@ -19,7 +19,7 @@ export default function Becomeachef() {
             you love
           </h1>
           <p className="lead">
-            Sign up to be your own boss and cook whenever you want.
+           <a href='/become-chef/register' className="text-info">Sign up</a>  to be your own boss and cook whenever you want.
           </p>
         </div>
         <img
