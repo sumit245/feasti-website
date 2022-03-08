@@ -48,29 +48,42 @@
 .text-on-carousel {
   font-size: 64px;
   font-weight: bold;
-  color: white;
+  color: #feaa1a;
+  text-shadow: #282c34;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Style 7
+   ----------------------------- */
+.seven h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: #222;
+  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.seven h2:after {
+  content: " ";
+  display: block;
+  background-color: #fff;
+  border-bottom: 1px solid #feaa1a;
+  border-top: 1px solid #feaa1a;
+  height: 10px;
+  max-width: 120px;
+  background-color: #f8f8f8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.seven h2:before {
+  content: "";
+  display: block;
+  background-color: #fff;
+  border-bottom: 1px solid #feaa1a;
+  border-top: 1px solid #feaa1a;
+  height: 10px;
+  max-width: 120px;
+  background-color: #f8f8f8;
+  margin-left: 78%;
 }

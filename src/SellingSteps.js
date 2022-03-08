@@ -4,12 +4,15 @@ export default function SellingSteps() {
   return (
     <div className="bg-light py-3">
       <div className="row mx-1 my-4">
-        <h2
-          className="text-black my-5 text-center"
-          style={{ fontWeight: "bolder" }}
-        >
-          How to sell on Feasti
-        </h2>
+        <div className="seven">
+          <h2
+            className="text-black my-5 text-center"
+            style={{ fontWeight: "bolder" }}
+          >
+            How to sell on Feasti
+          </h2>
+        </div>
+
         <div className="col-sm-3">
           <img
             src="https://cdn.shef.com/static/media/step-1.9ada50ca.png"

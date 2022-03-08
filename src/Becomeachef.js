@@ -1,6 +1,6 @@
 import React from "react";
 import MobileStoreButton from "react-mobile-store-button/lib/MobileStoreButton";
-import Img1 from "./assets/image.webp";
+import Img1 from "./assets/imagebg.jpg";
 import ChefReview from "./ChefReview";
 import FoodSafety from "./FoodSafety";
 import Footer from "./Footer";

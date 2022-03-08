@@ -4,9 +4,15 @@ export default function FoodSafety() {
   return (
     <div className="row mx-2 my-4">
       <div>
-        <h2 className="text-black text-center my-4" style={{ fontWeight: "bolder" }}>
-          Cooking safely
-        </h2>
+        <div className="seven">
+          <h2
+            className="text-black text-center my-4"
+            style={{ fontWeight: "bolder" }}
+          >
+            Cooking safely
+          </h2>
+        </div>
+
         <img
           src="https://cdn.shef.com/static/media/cooking-safely.7001665c.jpg"
           alt="chef-profile"
@@ -35,8 +41,8 @@ export default function FoodSafety() {
             <h3 className="text-dark my-4">Trusted by thousands of people</h3>
             <div className="col-sm-10">
               Feasti is used every day by thousands of customers around the
-              Canada. We work hard to help our shefs feel taken care of
-              and supported throughout the entire process.
+              Canada. We work hard to help our shefs feel taken care of and
+              supported throughout the entire process.
             </div>
           </div>
         </div>

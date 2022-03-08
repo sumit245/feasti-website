@@ -4,12 +4,15 @@ export default function Help() {
   return (
     <div>
       <div className="row mx-2 my-5">
-        <h2
-          className="text-black my-4 text-center"
-          style={{ fontWeight: "bolder" }}
-        >
-          Help when you need it
-        </h2>
+        <div className="seven">
+          <h2
+            className="text-black my-4 text-center"
+            style={{ fontWeight: "bolder" }}
+          >
+            Help when you need it
+          </h2>
+        </div>
+
         <div className="col-sm-6 my-4">
           <img
             src="https://cdn.shef.com/static/media/Talk_Icon.a0654cac.svg"

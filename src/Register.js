@@ -4,7 +4,7 @@ import Help from "./Help";
 import SellingSteps from "./SellingSteps";
 import WhatisChef from "./WhatisChef";
 import WhyBecomeChef from "./WhyBecomeChef";
-import Img1 from "./assets/image.webp";
+import Img1 from "./assets/imagebg.jpg";
 import RegisterForm from "./RegisterForm";
 import Footer from "./Footer";
 

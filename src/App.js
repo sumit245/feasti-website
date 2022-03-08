@@ -13,7 +13,7 @@ import Review from "./Review";
 
 function Home() {
   return (
-    <div className="container-fluid">
+    <div>
       <Header />
       <div className="row">
         <BannerCarousel />

@@ -4,12 +4,15 @@ export default function WhatisChef() {
   return (
     <div className="row mx-4 my-4">
       <div className="col-lg">
-        <h2
-          className="text-black text-center my-4 mb-4"
-          style={{ fontWeight: "bolder" }}
-        >
-          What is Feasti?
-        </h2>
+        <div className="seven">
+          <h2
+            className="text-black text-center my-4 mb-4"
+            style={{ fontWeight: "bolder" }}
+          >
+            What is Feasti?
+          </h2>
+        </div>
+
         <div className="col-lg my-4">
           Feasti connects talented cooks with local customers.
           <br />
