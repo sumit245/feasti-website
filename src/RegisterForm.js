@@ -1,6 +1,42 @@
-import React from "react";
-
+import React, { useState } from "react";
+import axios from "axios";
+import { css } from "@emotion/react";
+import { CircleLoader } from "react-spinners";
+const override = css`
+  position: "absolute";
+  left: 40%;
+  top: -250px;
+  z-index: 10;
+`;
 export default function RegisterForm() {
+  let [loading, setLoading] = useState(false);
+  const [checked, setChecked] = useState(false);
+  const [state, setState] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    postal_code: "",
+    restaurant_name: "",
+  });
+
+  const onChangeText = (event) => {
+    const { name, value } = event.target;
+    setState((state) => ({ ...state, [name]: value }));
+  };
+  const onSubmit = async () => {
+    setLoading(true);
+    const response = await axios.post(
+      "http://munkybox-admin.herokuapp.com/api/partnerrequest/",
+      state
+    );
+    const { status } = response.data;
+    if (status === 200) {
+      setLoading(false);
+      alert("Request submitted succesfully");
+    }
+  };
+
   return (
     <form>
       <div className="row mt-4 mx-1">
@@ -10,6 +46,8 @@ export default function RegisterForm() {
             type="text"
             className="form-control"
             id="first_name"
+            name="first_name"
+            onChange={(e) => onChangeText(e)}
             placeholder="First Name"
           />
         </div>
@@ -19,6 +57,8 @@ export default function RegisterForm() {
             type="text"
             className="form-control"
             id="last_name"
+            name="last_name"
+            onChange={(e) => onChangeText(e)}
             placeholder="Last Name"
           />
         </div>
@@ -30,6 +70,8 @@ export default function RegisterForm() {
             type="text"
             className="form-control"
             id="postal_code"
+            name="postal_code"
+            onChange={(e) => onChangeText(e)}
             placeholder="Postal Code"
           />
         </div>
@@ -40,6 +82,8 @@ export default function RegisterForm() {
             type="tel"
             className="form-control"
             id="phone"
+            onChange={(e) => onChangeText(e)}
+            name="phone"
             placeholder="Phone"
           />
         </div>
@@ -51,6 +95,8 @@ export default function RegisterForm() {
             type="email"
             className="form-control"
             id="email"
+            name="email"
+            onChange={(e) => onChangeText(e)}
             placeholder="Email"
           />
         </div>
@@ -62,6 +108,8 @@ export default function RegisterForm() {
             type="text"
             className="form-control"
             id="restaurant_name"
+            name="restaurant_name"
+            onChange={(e) => onChangeText(e)}
             placeholder="Restaurant Name"
           />
         </div>
@@ -73,6 +121,8 @@ export default function RegisterForm() {
             type="checkbox"
             className="form-check-input"
             id="exampleCheck1"
+            value={checked}
+            onChange={() => setChecked(!checked)}
           />
           <label className="form-check-label" htmlFor="exampleCheck1">
             I agree to the{"  "}
@@ -90,10 +140,24 @@ export default function RegisterForm() {
       </div>
 
       <div className="text-center my-3">
-        <button type="submit" className="btn btn-danger" style={{borderRadius:40}}>
+        <button
+          type="button"
+          disabled={!checked}
+          onClick={onSubmit}
+          className="btn btn-danger"
+          style={{ borderRadius: 40 }}
+        >
           Submit
         </button>
       </div>
+      {loading && (
+        <CircleLoader
+          color="#feaa1a"
+          css={override}
+          loading={loading}
+          size={50}
+        />
+      )}
     </form>
   );
 }

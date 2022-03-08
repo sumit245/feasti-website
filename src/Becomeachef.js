@@ -26,7 +26,11 @@ export default function Becomeachef() {
             you love
           </h1>
           <p className="lead">
-            <a href="/become-chef/register" className="text-info">
+            <a
+              href="/become-chef/register"
+              className=" text-decoration-none"
+              style={{ fontWeight: "bold", color: "royalblue",letterSpacing:1.5 }}
+            >
               Sign up
             </a>{" "}
             to be your own boss and cook whenever you want.
