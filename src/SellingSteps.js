@@ -4,7 +4,10 @@ export default function SellingSteps() {
   return (
     <div className="bg-light py-3">
       <div className="row mx-1 my-4">
-        <h2 className="text-danger my-5" style={{ fontWeight: "bolder" }}>
+        <h2
+          className="text-danger my-5 text-center"
+          style={{ fontWeight: "bolder" }}
+        >
           How to sell on Feasti
         </h2>
         <div className="col-sm-3">

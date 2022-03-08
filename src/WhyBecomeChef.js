@@ -6,14 +6,16 @@ export default function WhyBecomeChef() {
   return (
     <div className="row mx-4 my-4">
       <div className="col-lg">
-        <h2 className="text-danger my-4" style={{ fontWeight: "bolder" }}>
+        <h2
+          className="text-danger my-4 text-center"
+          style={{ fontWeight: "bolder" }}
+        >
           Why join Feasti?
         </h2>
         <div className="row my-4">
           <div className="col-sm-4">
             <img
               src={Cash}
-              // className="img-thumbnail"
               alt="cash-outline"
               style={{ height: 160, width: 160, borderRadius: 80 }}
             />
@@ -21,8 +23,8 @@ export default function WhyBecomeChef() {
               Make real money
             </h3>
             <div className="text-justify my-4">
-              It’s completely free to apply. Many shefs make around $1,000 per
-              week.
+              Turn your passion into profit, make cooking a steady source of
+              income.
             </div>
           </div>
           <div className="col-sm-4">

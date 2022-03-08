@@ -21,9 +21,9 @@ function Home() {
       <div className="row">
         <HowItWorks />
       </div>
-      <div className="row">
+      {/* <div className="row"> */}
         <Review />
-      </div>
+      {/* </div> */}
       <Footer />
     </div>
   );
