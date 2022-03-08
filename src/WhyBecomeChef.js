@@ -5,14 +5,14 @@ import Boss from "./assets/boss.png";
 export default function WhyBecomeChef() {
   return (
     <div className="row mx-4 my-4">
-      <div className="col-lg">
+      <div className="col-lg my-4">
         <h2
-          className="text-danger my-4 text-center"
+          className="text-black my-5 text-center"
           style={{ fontWeight: "bolder" }}
         >
           Why join Feasti?
         </h2>
-        <div className="row my-4">
+        <div className="row my-5">
           <div className="col-sm-4">
             <img
               src={Cash}

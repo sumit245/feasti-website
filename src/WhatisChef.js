@@ -5,12 +5,12 @@ export default function WhatisChef() {
     <div className="row mx-4 my-4">
       <div className="col-lg">
         <h2
-          className="text-danger text-center"
+          className="text-black text-center my-4 mb-4"
           style={{ fontWeight: "bolder" }}
         >
           What is Feasti?
         </h2>
-        <div className="col-lg">
+        <div className="col-lg my-4">
           Feasti connects talented cooks with local customers.
           <br />
           <br />

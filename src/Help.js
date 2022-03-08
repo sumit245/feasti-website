@@ -5,7 +5,7 @@ export default function Help() {
     <div>
       <div className="row mx-2 my-5">
         <h2
-          className="text-danger my-4 text-center"
+          className="text-black my-4 text-center"
           style={{ fontWeight: "bolder" }}
         >
           Help when you need it

@@ -4,7 +4,7 @@ export default function FoodSafety() {
   return (
     <div className="row mx-2 my-4">
       <div>
-        <h2 className="text-danger my-4" style={{ fontWeight: "bolder" }}>
+        <h2 className="text-black text-center my-4" style={{ fontWeight: "bolder" }}>
           Cooking safely
         </h2>
         <img
