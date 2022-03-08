@@ -8,9 +8,9 @@ export default function Footer() {
   const androidUrl =
     "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
   return (
-    <footer className="page-footer font-small bg-dark pt-4">
-      <div className="container-fluid text-md-left">
-        <div className="row">
+    <footer className="bg-dark pt-4 mx-0">
+      <div className="container-fluid justify-content-center">
+        <div className="row align-items-center">
           <div className="col-sm-8">
             <div className="row align-items-center">
               <div className="col-sm-4">
@@ -21,12 +21,15 @@ export default function Footer() {
                   <MobileStoreButton
                     store="ios"
                     width={148}
+                    height={44}
                     url={iOSUrl}
                     linkProps={{ title: "Download Feasti" }}
                   />
+
                   <MobileStoreButton
                     store="android"
-                    width={148}
+                    width={168}
+                    height={64}
                     url={androidUrl}
                     linkProps={{ title: "Download Feasti" }}
                   />
@@ -34,55 +37,51 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="col-sm-4 justify-content-center">
-            <span className="mx-2">
+          <div className="col-sm-4">
+            <h5 className="mx-2">
               <a
                 href="https://www.facebook.com/feasti"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white text-decoration-none"
+                className="text-white-50 text-decoration-none mx-2"
               >
                 <FaFacebookF />
               </a>
-            </span>
-            <span className="mx-2">
               <a
                 href="https://www.instagram.com/feasti"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white text-decoration-none"
+                className="text-white-50 text-decoration-none mx-2"
               >
                 <FaInstagram />
               </a>
-            </span>
+            </h5>
           </div>
         </div>
       </div>
 
-      <div className="bg-dark row py-4 mx-0">
-        <div className=" col-sm-4">
-          <span className="footer-copyright text-white">
+      <div className="row py-1 pb-2 mx-0">
+        <div className=" col-sm-8">
+          <span className="text-white-50 text-small">
             © Feasti, Inc. 2020. All Rights Reserved.
           </span>
         </div>
-        <div className="col-sm-2">
-          <a href="/privacy-policy" className="text-white text-decoration-none">
+        <div className="col-sm-4">
+          <a
+            href="/privacy-policy"
+            className="text-white-50 text-decoration-none mx-2"
+          >
             Privacy Policy
           </a>
-        </div>
-        <div className="col-sm-3">
           <a
             href="/terms-of-service"
-            className="text-white text-decoration-none"
+            className="text-white-50 text-decoration-none mx-2"
           >
             Terms of Service
           </a>
-        </div>
-        <div className="col-sm-2 text-justify">
           <a
             href="/become-chef/register"
-            className="text-white text-decoration-none"
-            style={{ fontWeight: "bold" }}
+            className="text-white-50 text-decoration-none mx-2"
           >
             Join Feasti
           </a>
