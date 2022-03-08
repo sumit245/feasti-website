@@ -9,6 +9,7 @@ import Register from "./Register";
 import Footer from "./Footer";
 import PrivacyPoilcy from "./PrivacyPoilcy";
 import TermsofService from "./TermsofService";
+import Review from "./Review";
 
 function Home() {
   return (
@@ -19,6 +20,9 @@ function Home() {
       </div>
       <div className="row">
         <HowItWorks />
+      </div>
+      <div className="row">
+        <Review />
       </div>
       <Footer />
     </div>

@@ -8,7 +8,7 @@ export default function HowItWorks() {
         <h1 className="text-center">How it works</h1>
       </div>
       <div className="row mt-4 text-center">
-        <div className="col-sm-4 mx-2 text-center ">
+        <div className="col-sm-4 mx-1 text-center ">
           <img
             src={IMg1}
             className="img-thumbnail"
@@ -16,13 +16,14 @@ export default function HowItWorks() {
             alt=""
           />
           <h4 className="text-center">
-            <span className="navy">Choose a chef</span>
+            <span className="navy">Explore</span>
           </h4>
           <p className="text-center">
-            All restaurants are food safety certified <br />
+            Discover homemade meals near you. All of our HomeCooks are carefully
+            vetted & food safety certified. <br />
           </p>
         </div>
-        <div className="col-sm-4 mx-2 text-center">
+        <div className="col-sm-3 mx-1 text-center">
           <img
             src={IMg1}
             className="img-thumbnail"
@@ -30,15 +31,14 @@ export default function HowItWorks() {
             alt=""
           />
           <h4 className="text-center">
-            <span className="navy">Pick a plan</span>
+            <span className="navy">Order</span>
           </h4>
           <p className="text-center">
-            Order with the most flexible
-            <br />
-            subscription suiting your pocket
+            Add dishes to your cart, select pickup or delivery date & time and
+            checkout - it’s that easy!
           </p>
         </div>
-        <div className="col-sm-4 mx-2 text-center">
+        <div className="col-sm-4 mx-1 text-center">
           <img
             src={IMg1}
             className="img-thumbnail"
@@ -46,11 +46,11 @@ export default function HowItWorks() {
             alt=""
           />
           <h4 className="text-center">
-            <span className="navy">Get your delivery </span>
+            <span className="navy">Enjoy</span>
           </h4>
           <p className="text-center">
-            Get your meal arrived the place where <br />
-            you are in the town
+            Do curbside pickup or get your order delivered directly to your
+            door. Food is delivered hot and ready to eat!
           </p>
         </div>
       </div>
