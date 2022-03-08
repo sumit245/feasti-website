@@ -24,16 +24,20 @@ export default function RegisterForm() {
     const { name, value } = event.target;
     setState((state) => ({ ...state, [name]: value }));
   };
+
   const onSubmit = async () => {
     setLoading(true);
     const response = await axios.post(
       "http://munkybox-admin.herokuapp.com/api/partnerrequest/",
       state
     );
-    const { status } = response.data;
+    const { status, msg } = response.data;
     if (status === 200) {
       setLoading(false);
       alert("Request submitted succesfully");
+    } else if (status === 403) {
+      setLoading(false);
+      alert(msg);
     }
   };
 
