@@ -6,6 +6,7 @@ import FoodSafety from "./FoodSafety";
 import Footer from "./Footer";
 import Header from "./Header";
 import Help from "./Help";
+import PaymentStructure from "./PaymentStructure";
 import SellingSteps from "./SellingSteps";
 import WhatisChef from "./WhatisChef";
 import WhyBecomeChef from "./WhyBecomeChef";
@@ -29,7 +30,11 @@ export default function Becomeachef() {
             <a
               href="/become-chef/register"
               className=" text-decoration-none"
-              style={{ fontWeight: "bold", color: "royalblue",letterSpacing:1.5 }}
+              style={{
+                fontWeight: "bold",
+                color: "royalblue",
+                letterSpacing: 1.5,
+              }}
             >
               Sign up
             </a>{" "}
@@ -68,8 +73,27 @@ export default function Becomeachef() {
       <WhyBecomeChef />
       <ChefReview />
       <SellingSteps />
+      <PaymentStructure />
       <Help />
       <FoodSafety />
+      <div
+        class="d-flex justify-content-center align-items-center h-100 py-4 mx-4"
+        style={{
+          borderTopColor: "#ddd",
+          borderTopWidth: 1,
+          borderTopStyle: "solid",
+        }}
+      >
+        <h4>
+          Have more questions?{" "}
+          <a
+            href="mailto://support@feasti.com"
+            className="text-decoration-none"
+          >
+            Email Us
+          </a>
+        </h4>
+      </div>
       <Footer />
     </div>
   );

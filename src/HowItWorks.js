@@ -4,7 +4,7 @@ import IMg1 from "./assets/img1.jpeg";
 export default function HowItWorks() {
   return (
     <>
-      <div className="row mt-4 ">
+      <div className="row mt-4 seven">
         <h1 className="text-center">How it works</h1>
       </div>
       <div className="row mt-4 text-center">
