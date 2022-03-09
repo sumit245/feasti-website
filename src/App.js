@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import PrivacyPoilcy from "./PrivacyPoilcy";
 import TermsofService from "./TermsofService";
 import Review from "./Review";
+import Values from "./home/Values";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <Header />
       <BannerCarousel />
       <HowItWorks />
+      <Values />
       <Review />
       <Footer />
     </div>
