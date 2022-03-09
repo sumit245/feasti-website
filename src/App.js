@@ -11,6 +11,7 @@ import PrivacyPoilcy from "./PrivacyPoilcy";
 import TermsofService from "./TermsofService";
 import Review from "./Review";
 import Values from "./home/Values";
+import Featured from "./home/Featured";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <BannerCarousel />
       <HowItWorks />
       <Values />
+      <Featured />
       <Review />
       <Footer />
     </div>

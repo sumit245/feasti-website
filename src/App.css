@@ -84,6 +84,7 @@
   height: 240px;
   width: 100%;
   background: url("./assets/wave.svg") bottom center;
+  background-blend-mode: multiply;
 }
 .our-values-container {
   background: white;
@@ -120,4 +121,47 @@
   margin-top: -90px;
   max-height: 260px;
   margin-left: 0px;
+}
+
+.overlay-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay-image {
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #feaa1a;
+}
+
+.overlay-image-container:hover .overlay {
+  opacity: 1;
+}
+.overlay-image-container:hover .overlay-image {
+  opacity: 0.3;
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  text-align: left;
 }
