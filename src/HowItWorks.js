@@ -14,15 +14,15 @@ export default function HowItWorks() {
           How it works
         </h2>
       </div>
-      <div className="row mt-4 text-center mx-4">
-        <div className="col-sm-4 mx-1 text-center ">
+      <div className="row mt-4 mx-4">
+        <div className="col-sm-4 text-center ">
           <img
             src={Explore}
             className="img-thumbnail"
             style={{ height: 240, width: 320 }}
             alt=""
           />
-          <h4 className="text-center">
+          <h4 className="text-center my-3">
             <span className="navy">Explore</span>
           </h4>
           <p className="text-center">
@@ -30,14 +30,14 @@ export default function HowItWorks() {
             vetted & food safety certified. <br />
           </p>
         </div>
-        <div className="col-sm-3 mx-1 text-center">
+        <div className="col-sm-4 text-center">
           <img
             src={Cooking}
             className="img-thumbnail"
             style={{ height: 240, width: 320 }}
             alt=""
           />
-          <h4 className="text-center">
+          <h4 className="text-center my-3">
             <span className="navy">Order</span>
           </h4>
           <p className="text-center">
@@ -45,14 +45,14 @@ export default function HowItWorks() {
             checkout - it’s that easy!
           </p>
         </div>
-        <div className="col-sm-4 mx-1 text-center">
+        <div className="col-sm-4 text-center">
           <img
             src={FoodDelivery}
             className="img-thumbnail"
             style={{ height: 240, width: 320 }}
             alt=""
           />
-          <h4 className="text-center">
+          <h4 className="text-center my-3">
             <span className="navy">Enjoy</span>
           </h4>
           <p className="text-center">

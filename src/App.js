@@ -15,15 +15,9 @@ function Home() {
   return (
     <div>
       <Header />
-      <div className="row">
-        <BannerCarousel />
-      </div>
-      <div className="row">
-        <HowItWorks />
-      </div>
-
+      <BannerCarousel />
+      <HowItWorks />
       <Review />
-
       <Footer />
     </div>
   );
