@@ -1,18 +1,25 @@
 import React from "react";
-import IMg1 from "./assets/img1.jpeg";
+import Cooking from "./assets/cooking.gif";
+import FoodDelivery from "./assets/fooddelivery.gif";
+import Explore from "./assets/foodsearch.gif";
 
 export default function HowItWorks() {
   return (
     <>
       <div className="row mt-4 seven">
-        <h1 className="text-center">How it works</h1>
+        <h2
+          className="text-black text-center my-4 mb-4"
+          style={{ fontWeight: "bolder" }}
+        >
+          How it works
+        </h2>
       </div>
-      <div className="row mt-4 text-center">
+      <div className="row mt-4 text-center mx-4">
         <div className="col-sm-4 mx-1 text-center ">
           <img
-            src={IMg1}
+            src={Explore}
             className="img-thumbnail"
-            style={{ height: 160, width: 160, borderRadius: 80 }}
+            style={{ height: 240, width: 320 }}
             alt=""
           />
           <h4 className="text-center">
@@ -25,9 +32,9 @@ export default function HowItWorks() {
         </div>
         <div className="col-sm-3 mx-1 text-center">
           <img
-            src={IMg1}
+            src={Cooking}
             className="img-thumbnail"
-            style={{ height: 160, width: 160, borderRadius: 80 }}
+            style={{ height: 240, width: 320 }}
             alt=""
           />
           <h4 className="text-center">
@@ -40,9 +47,9 @@ export default function HowItWorks() {
         </div>
         <div className="col-sm-4 mx-1 text-center">
           <img
-            src={IMg1}
+            src={FoodDelivery}
             className="img-thumbnail"
-            style={{ height: 160, width: 160, borderRadius: 80 }}
+            style={{ height: 240, width: 320 }}
             alt=""
           />
           <h4 className="text-center">
