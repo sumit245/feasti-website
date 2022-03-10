@@ -12,6 +12,8 @@ import TermsofService from "./TermsofService";
 import Review from "./Review";
 import Values from "./home/Values";
 import Featured from "./home/Featured";
+import MeettheChef from "./home/MeettheChef";
+import Testimonials from "./home/testimonials";
 
 function Home() {
   return (
@@ -21,7 +23,9 @@ function Home() {
       <HowItWorks />
       <Values />
       <Featured />
-      <Review />
+      <MeettheChef />
+
+      <Testimonials />
       <Footer />
     </div>
   );

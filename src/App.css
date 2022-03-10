@@ -165,3 +165,11 @@
   left: 10%;
   text-align: left;
 }
+.alice-carousel__dots {
+  position: relative;
+  top: -320px;
+  left: 240px;
+}
+.alice-carousel {
+  width: auto;
+}

@@ -5,7 +5,15 @@ import Perri from "./assets/perri.jpeg";
 export default function Review() {
   return (
     <div className="row mx-1">
-      <h3 className="text-center">Lots of Happy Customers</h3>
+      <div className="seven">
+        <h2
+          className="text-black my-5 text-center"
+          style={{ fontWeight: "bolder" }}
+        >
+          Lots of Happy Customers
+        </h2>
+      </div>
+
       <div className="row justify-content-between">
         <div className="card my-2 p-1 col-sm-4">
           <img
