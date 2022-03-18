@@ -54,7 +54,12 @@ const items = [
       />
     }
     title="Why Try Feasti?"
-    subtitle="Fresh & Made-to-Order"
+    subtitle={[
+      <strong>Fresh & Made-to-Order</strong>,
+      <br />,
+      <br />,
+      "Our HomeCooks purchase ingredients locally and prepare dishes to suit your dietary preferences. ",
+    ]}
     mobile
     landscape
   >
@@ -72,7 +77,12 @@ const items = [
       />
     }
     title="Why try Feasti ?"
-    subtitle="Affordable & Sustainable"
+    subtitle={[
+      <strong>Support Local Cooks</strong>,
+      <br />,
+      <br/>,
+      "Help empower local talented folks in your community with the opportunity to share their delicious culinary creations",
+    ]}
     mobile
     landscape
   />,
@@ -85,7 +95,12 @@ const items = [
       />
     }
     title="Why try Feasti ?"
-    subtitle="Experience Authentic Food"
+    subtitle={[
+      <strong>Experience Authentic Food</strong>,
+      <br />,
+      <br />,
+      "Enjoy a worldly culinary experience without even having to step outside of your neighborhood.",
+    ]}
     mobile
     landscape
   />,
