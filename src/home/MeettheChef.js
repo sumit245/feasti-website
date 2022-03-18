@@ -10,7 +10,7 @@ const styles = {
   root: {
     backgroundColor: "#fff",
     height: 640,
-    width: 800,
+    width: 1000,
   },
   media: {
     backgroundColor: "#fff",
@@ -18,6 +18,8 @@ const styles = {
     borderColor: red[400],
     borderWidth: 1,
     borderStyle: "solid",
+    height: 640,
+    width: 800,
   },
   title: {
     color: "#fff",
@@ -53,7 +55,6 @@ const items = [
         style={{ height: 640, width: 640 }}
       />
     }
-    title="Why Try Feasti?"
     subtitle={[
       <strong>Fresh & Made-to-Order</strong>,
       <br />,
@@ -76,11 +77,10 @@ const items = [
         style={{ height: 640, width: 640 }}
       />
     }
-    title="Why try Feasti ?"
     subtitle={[
       <strong>Support Local Cooks</strong>,
       <br />,
-      <br/>,
+      <br />,
       "Help empower local talented folks in your community with the opportunity to share their delicious culinary creations",
     ]}
     mobile
@@ -94,7 +94,6 @@ const items = [
         style={{ height: 640, width: 640 }}
       />
     }
-    title="Why try Feasti ?"
     subtitle={[
       <strong>Experience Authentic Food</strong>,
       <br />,
@@ -116,7 +115,7 @@ export default function MeettheChef() {
           Meet the chef
         </h2>
       </div>
-      <div className="container" style={{ maxWidth: 1000 }}>
+      <div className="container">
         <AliceCarousel
           mouseTracking
           items={items}

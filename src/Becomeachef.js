@@ -21,7 +21,7 @@ export default function Becomeachef() {
       <Header />
       <div>
         <div className="carousel-content">
-          <h1 className="text-on-carousel" style={{color:"#fff"}}>
+          <h1 className="text-on-carousel" style={{ color: "#fff" }}>
             <br />
             Earn money doing <br />
             what you love
@@ -84,13 +84,14 @@ export default function Becomeachef() {
           borderTopStyle: "solid",
         }}
       >
-        <h4>
+        <h4 style={{ color: "gray", fontWeight: "bold" }}>
           Have more questions?{" "}
           <a
             href="mailto://support@feasti.com"
             className="text-decoration-none"
+            style={{ color: "gray" }}
           >
-            support@feasti.com
+            Email support@feasti.com
           </a>
         </h4>
       </div>
