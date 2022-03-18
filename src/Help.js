@@ -9,7 +9,7 @@ export default function Help() {
             className="text-black my-4 text-center"
             style={{ fontWeight: "bolder" }}
           >
-            Help when you need it
+            An extra hand in the kitchen…
           </h2>
         </div>
 
@@ -18,13 +18,10 @@ export default function Help() {
             src="https://cdn.shef.com/static/media/Talk_Icon.a0654cac.svg"
             alt="cht-with-us"
           />
-          <h3 className="text-dark my-4">Talk to us</h3>
+          <h3 className="text-dark my-4">Support via email and text</h3>
           <div className="text-justify">
-            Reach out to our customer support whenever you have an issue.
-            <br />
-            <br />
-            We’re only a quick email or text away. Our team looks forward to
-            hearing from you and answering your questions.
+            Reach out to our Cook Support Team via email or text message
+            anytime, and a representative will get back to you asap!
           </div>
         </div>
         <div className="col-sm-6 my-4">
@@ -32,15 +29,13 @@ export default function Help() {
             src="https://cdn.shef.com/static/media/Food_Icon.71ea0c27.svg"
             alt="passion"
           />
-          <h3 className="text-dark my-4">Pursue your passion</h3>
+          <h3 className="text-dark my-4">
+            Software to handle the business stuff
+          </h3>
           <div>
-            We’ll help you with payments, logistics and customer support so
-            <br />
-            you can focus on what you love: cooking amazing food.
-            <br />
-            <br />
-            We’ll also provide you with marketing support so that customers can
-            fall in love with your food from day one.
+            Spend more time on your passion and craft, and less time dealing
+            with calls, texts, schedules and payments. Our software handles all
+            of that for you!
           </div>
         </div>
         <div className="col-sm-6 mt-5 my-4">
@@ -65,11 +60,9 @@ export default function Help() {
           />
           <h3 className="text-dark my-4">Get advice</h3>
           <div>
-            We have hundreds of tips and data points available for you to use
-            when designing your food business.
-            <br />
-            Join our weekly informational calls to learn how to improve your
-            menus and build a successful business on Feasti.
+            Any-time access to our extensive knowledgebase, full of helpful
+            articles and video tutorials on how to grow your home cooking
+            business.
           </div>
         </div>
       </div>

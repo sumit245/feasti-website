@@ -7,9 +7,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Becomeachef from "./Becomeachef";
 import Register from "./Register";
 import Footer from "./Footer";
-import PrivacyPoilcy from "./PrivacyPoilcy";
+import PrivacyPolicy from "./PrivacyPolicy";
 import TermsofService from "./TermsofService";
-import Review from "./Review";
 import Values from "./home/Values";
 import Featured from "./home/Featured";
 import MeettheChef from "./home/MeettheChef";
@@ -24,7 +23,6 @@ function Home() {
       <Values />
       <Featured />
       <MeettheChef />
-
       <Testimonials />
       <Footer />
     </div>
@@ -39,7 +37,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="become-chef" element={<Becomeachef />} />
           <Route path="/become-chef/register" element={<Register />} />
-          <Route path="/privacy-policy" element={<PrivacyPoilcy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsofService />} />
         </Routes>
       </BrowserRouter>

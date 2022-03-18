@@ -6,7 +6,7 @@ export default function PrivacyPoilcy() {
   return (
       <div>
           <Header />
-          <div className='row'>
+          <div className='row mx-2'>
               Hi
           </div>
           <Footer/>

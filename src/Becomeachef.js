@@ -21,10 +21,10 @@ export default function Becomeachef() {
       <Header />
       <div>
         <div className="carousel-content">
-          <h1 className="text-on-carousel">
+          <h1 className="text-on-carousel" style={{color:"#fff"}}>
             <br />
-            Earn money doing what <br />
-            you love
+            Earn money doing <br />
+            what you love
           </h1>
           <p className="lead">
             <a
@@ -36,7 +36,7 @@ export default function Becomeachef() {
                 letterSpacing: 1.5,
               }}
             >
-              Sign up
+              Get Started
             </a>{" "}
             to be your own boss and cook whenever you want.
           </p>
@@ -77,7 +77,7 @@ export default function Becomeachef() {
       <Help />
       <FoodSafety />
       <div
-        class="d-flex justify-content-center align-items-center h-100 py-4 mx-4"
+        className="d-flex justify-content-center align-items-center h-100 py-4 mx-4"
         style={{
           borderTopColor: "#ddd",
           borderTopWidth: 1,
@@ -90,7 +90,7 @@ export default function Becomeachef() {
             href="mailto://support@feasti.com"
             className="text-decoration-none"
           >
-            Email Us
+            support@feasti.com
           </a>
         </h4>
       </div>

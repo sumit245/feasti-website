@@ -37,7 +37,7 @@ export default function WhyBecomeChef() {
               style={{ height: 160, width: 160, borderRadius: 80 }}
             />
             <h3 className="text-justify my-4" style={{ fontWeight: "bolder" }}>
-              Be your own boss
+              Set Your Own Schedule
             </h3>
             <div className="text-justify my-4">
               Design your own menu, set your own prices and work when you want.

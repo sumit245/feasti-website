@@ -12,11 +12,10 @@ export default function BannerCarousel() {
     <div>
       <div className="carousel-content">
         <h1 className="text-on-carousel">
-          Authentic dishes.
+          Homemade Food.
           <br />
-          Homemade.
-          <br />
-          Delivered.
+          Subscription based
+          <br /> meal ordering platform
         </h1>
       </div>
       <img

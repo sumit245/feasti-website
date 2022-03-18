@@ -8,7 +8,7 @@ export default function Featured() {
           className="text-black text-center my-4 mb-4"
           style={{ fontWeight: "bolder" }}
         >
-          Featured Restaurant
+          Featured Chefs
         </h2>
       </div>
       <div className="row mx-2 my-4">
@@ -32,7 +32,7 @@ export default function Featured() {
               >
                 <br />
                 <br />
-                by Bernard Arnault
+                by Bernard Arnault | Toronto
               </h4>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Featured() {
                 >
                   <br />
                   <br />
-                  by Jim Walton
+                  by Jim Walton | Toronto
                 </h4>
               </div>
             </div>

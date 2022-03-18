@@ -23,7 +23,7 @@ export default function HowItWorks() {
             alt=""
           />
           <h4 className="text-center my-3">
-            <span className="navy">Explore</span>
+            <span>Explore</span>
           </h4>
           <p className="text-center">
             Discover homemade meals near you. All of our HomeCooks are carefully
@@ -38,11 +38,11 @@ export default function HowItWorks() {
             alt=""
           />
           <h4 className="text-center my-3">
-            <span className="navy">Order</span>
+            <span className="navy">Easy Subscription</span>
           </h4>
           <p className="text-center">
-            Add dishes to your cart, select pickup or delivery date & time and
-            checkout - it’s that easy!
+            Lunch and Dinner made super easy. Choose weekly or monthly plans,
+            Add to your cart and checkout – it’s that easy!
           </p>
         </div>
         <div className="col-sm-4 text-center">
@@ -56,8 +56,8 @@ export default function HowItWorks() {
             <span className="navy">Enjoy</span>
           </h4>
           <p className="text-center">
-            Do curbside pickup or get your order delivered directly to your
-            door. Food is delivered hot and ready to eat!
+            Affordable healthy meals, Get your order delivered directly to your
+            door, so you can eat worry-free, every day.
           </p>
         </div>
       </div>

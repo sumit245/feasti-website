@@ -151,7 +151,7 @@ export default function RegisterForm() {
           className="btn btn-danger"
           style={{ borderRadius: 40 }}
         >
-          Submit
+          Get Started
         </button>
       </div>
       {loading && (

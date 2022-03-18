@@ -1,6 +1,6 @@
 import React from "react";
 import { Slide } from "material-auto-rotating-carousel";
-import { red, blue, green } from "@material-ui/core/colors";
+import { red } from "@material-ui/core/colors";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -10,7 +10,7 @@ const styles = {
   root: {
     backgroundColor: "#fff",
     height: 640,
-    width: 1000,
+    width: 800,
   },
   media: {
     backgroundColor: "#fff",
@@ -23,6 +23,7 @@ const styles = {
     color: "#fff",
     backgroundColor: red[400],
     zIndex: 1000,
+    fontSize: 22,
   },
   subtitle: {
     color: "#fff",
@@ -34,10 +35,9 @@ const styles = {
     color: "#fff",
     backgroundColor: red[400],
     padding: 20,
-    minWidth: 340,
-    maxWidth: "calc(60% - 48px)",
+    width: 496,
     paddingBottom: 40,
-    marginLeft: -100,
+    marginLeft: -48,
     marginTop: -20,
     zIndex: 1000,
   },
@@ -48,20 +48,27 @@ const items = [
     mediaBackgroundStyle={{ backgroundColor: "#fff" }}
     media={
       <img
-        src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=787&q=80"
         alt=""
+        style={{ height: 640, width: 640 }}
       />
     }
-    title="Why try Feasti ?"
-    subtitle="Support Local Cooks"
+    title="Why Try Feasti?"
+    subtitle="Fresh & Made-to-Order"
     mobile
     landscape
-  />,
+  >
+    <p className="lead">
+      Our HomeCooks purchase ingredients locally and prepare dishes to suit your
+      dietary preferences.
+    </p>
+  </StyledSlide>,
   <StyledSlide
     media={
       <img
         src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80"
         alt=""
+        style={{ height: 640, width: 640 }}
       />
     }
     title="Why try Feasti ?"
@@ -72,8 +79,9 @@ const items = [
   <StyledSlide
     media={
       <img
-        src="https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=442&q=80"
+        src="https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80"
         alt=""
+        style={{ height: 640, width: 640 }}
       />
     }
     title="Why try Feasti ?"
@@ -98,7 +106,7 @@ export default function MeettheChef() {
           mouseTracking
           items={items}
           disableButtonsControls
-          autoPlay
+          // autoPlay
         />
       </div>
     </div>

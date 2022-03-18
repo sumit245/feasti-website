@@ -18,6 +18,7 @@ export default function ChefReview() {
               className="sc-mlOqW flXQvI"
               alt="chef-1"
             />
+          &nbsp;&nbsp;  Abby, Toronto | Joined in 2022
             <p className="lead" style={{ fontStyle: "italic" }}>
               For me, Feasti has been the perfect platform to exhibit my skills,
               talents and interests in cooking. My partnership with Feasti has
@@ -29,7 +30,6 @@ export default function ChefReview() {
               and make an earning. I’m not only happy but also proud to be
               associated with Feasti as a chef.
             </p>
-            <div className="text">Abby, Toronto | Joined in 2022</div>
           </div>
         </div>
       </div>
@@ -40,6 +40,7 @@ export default function ChefReview() {
             className="sc-mlOqW flXQvI"
             alt="text"
           />
+         &nbsp; &nbsp; Gabriel, Toronto | Joined in 2022
           <p className="lead" style={{ fontStyle: "italic" }}>
             I have always been passionate about cooking, it gives me a certain
             joy when I’m cooking for people. I enjoy the process of trying out
@@ -55,7 +56,6 @@ export default function ChefReview() {
             they have become an extension of my kitchen, constantly
             communicating with me and giving feedback.
           </p>
-          <div className="text">Gabriel, Toronto | Joined in 2022</div>
         </div>
         <div className="col-sm-6">
           <div className="sc-bWNSNh iSVwls sc-kQEKhi sc-ekBFwZ gvQcQZ ezWqGj">

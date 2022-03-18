@@ -73,6 +73,13 @@ export default function Footer() {
           </span>
         </div>
         <div className="col-sm-4">
+        <a
+            href="/privacy-policy"
+            className="text-white-50 text-decoration-none mx-2"
+            style={{fontSize:14}}
+          >
+            Contact us
+          </a>
           <a
             href="/privacy-policy"
             className="text-white-50 text-decoration-none mx-2"
