@@ -1,6 +1,5 @@
 import React from "react";
 import { Slide } from "material-auto-rotating-carousel";
-import { red } from "@material-ui/core/colors";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -15,7 +14,7 @@ const styles = {
   media: {
     backgroundColor: "#fff",
     padding: 4,
-    borderColor: red[400],
+    borderColor: "#ff6600",
     borderWidth: 1,
     borderStyle: "solid",
     height: 640,
@@ -23,19 +22,19 @@ const styles = {
   },
   title: {
     color: "#fff",
-    backgroundColor: red[400],
+    backgroundColor: "#ff9900",
     zIndex: 1000,
     fontSize: 22,
   },
   subtitle: {
     color: "#fff",
-    backgroundColor: red[400],
+    backgroundColor: "#ff6600",
     paddingBottom: 40,
     zIndex: 1000,
   },
   textMobileLandscape: {
     color: "#fff",
-    backgroundColor: red[400],
+    backgroundColor: "#ff6600",
     padding: 20,
     width: 496,
     paddingBottom: 40,

@@ -1,4 +1,5 @@
 import React from "react";
+import Quotation from "./assets/quotation.svg";
 
 export default function ChefReview() {
   return (
@@ -13,12 +14,8 @@ export default function ChefReview() {
         </div>
         <div className="col-sm-6">
           <div className="text-justify">
-            <img
-              src="https://cdn.shef.com/static/media/Quote_Icon.5d24a819.svg"
-              className="sc-mlOqW flXQvI"
-              alt="chef-1"
-            />
-          &nbsp;&nbsp;  Abby, Toronto | Joined in 2022
+            <img src={Quotation} alt="chef-1" />
+            &nbsp;&nbsp; Abby, Toronto | Joined in 2022
             <p className="lead" style={{ fontStyle: "italic" }}>
               For me, Feasti has been the perfect platform to exhibit my skills,
               talents and interests in cooking. My partnership with Feasti has
@@ -35,12 +32,8 @@ export default function ChefReview() {
       </div>
       <div className="row mx-4 my-4">
         <div className="col-sm-6">
-          <img
-            src="https://cdn.shef.com/static/media/Quote_Icon.5d24a819.svg"
-            className="sc-mlOqW flXQvI"
-            alt="text"
-          />
-         &nbsp; &nbsp; Gabriel, Toronto | Joined in 2022
+          <img src={Quotation} alt="text" />
+          &nbsp; &nbsp; Gabriel, Toronto | Joined in 2022
           <p className="lead" style={{ fontStyle: "italic" }}>
             I have always been passionate about cooking, it gives me a certain
             joy when I’m cooking for people. I enjoy the process of trying out

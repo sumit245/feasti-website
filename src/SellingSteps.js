@@ -21,8 +21,8 @@ export default function SellingSteps() {
             alt="step-1"
           />
           <h2
-            className="text-justify text-danger my-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify  my-3"
+            style={{ fontWeight: "bolder", color: "#ff6600" }}
           >
             1
           </h2>
@@ -49,8 +49,8 @@ export default function SellingSteps() {
             alt="step-2"
           />
           <h2
-            className="text-justify text-danger my-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify  my-3"
+            style={{ fontWeight: "bolder", color: "#ff6600" }}
           >
             2
           </h2>
@@ -71,8 +71,8 @@ export default function SellingSteps() {
             alt="step-3"
           />
           <h2
-            className="text-justify text-danger my-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify my-3"
+            style={{ fontWeight: "bolder", color: "#ff6600" }}
           >
             3
           </h2>
@@ -93,8 +93,8 @@ export default function SellingSteps() {
             alt="step-4"
           />
           <h2
-            className="text-justify text-danger my-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify  my-3"
+            style={{ fontWeight: "bolder", color: "#ff6600" }}
           >
             4
           </h2>
@@ -116,8 +116,8 @@ export default function SellingSteps() {
             alt="step-4"
           />
           <h2
-            className="text-justify text-danger my-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify my-3"
+            style={{ fontWeight: "bolder", color: "#ff6600" }}
           >
             5
           </h2>

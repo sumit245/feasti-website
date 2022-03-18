@@ -1,4 +1,8 @@
 import React from "react";
+import Bulb from "./assets/Bulb_Icon.svg";
+import Chat from "./assets/Talk_Icon.svg"
+import Food from "./assets/Food_Icon.svg"
+import Store from "./assets/Store_Icon.svg"
 
 export default function Help() {
   return (
@@ -15,7 +19,7 @@ export default function Help() {
 
         <div className="col-sm-6 my-4">
           <img
-            src="https://cdn.shef.com/static/media/Talk_Icon.a0654cac.svg"
+            src={Chat}
             alt="cht-with-us"
           />
           <h3 className="text-dark my-4">Support via email and text</h3>
@@ -26,7 +30,7 @@ export default function Help() {
         </div>
         <div className="col-sm-6 my-4">
           <img
-            src="https://cdn.shef.com/static/media/Food_Icon.71ea0c27.svg"
+            src={Food}
             alt="passion"
           />
           <h3 className="text-dark my-4">
@@ -40,7 +44,7 @@ export default function Help() {
         </div>
         <div className="col-sm-6 mt-5 my-4">
           <img
-            src="https://cdn.shef.com/static/media/Store_Icon.54f36f31.svg"
+            src={Store}
             alt="shop-online"
           />
           <h3 className="text-dark my-4">Craft your menu</h3>
@@ -54,10 +58,7 @@ export default function Help() {
           </div>
         </div>
         <div className="col-sm-6 mt-5 my-4">
-          <img
-            src="https://cdn.shef.com/static/media/Bulb_Icon.d56589f9.svg"
-            alt="idea"
-          />
+          <img src={Bulb} alt="idea" />
           <h3 className="text-dark my-4">Get advice</h3>
           <div>
             Any-time access to our extensive knowledgebase, full of helpful

@@ -5,7 +5,9 @@
 .App-logo {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: maroon;
+  background: -webkit-linear-gradient(to top, #ff9900 1%, #ff6600 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ff6600;
   text-align: center;
   font-size: 128;
   font-weight: bolder;
@@ -39,8 +41,13 @@
 .text-on-carousel {
   font-size: 64px;
   font-weight: bold;
-  color: #feaa1a;
+  color: #ff9900;
   text-shadow: #282c34;
+}
+
+.btn-danger {
+  background: linear-gradient(to bottom right, #ff9900 1%, #ff6600 100%);
+  border-color: #ff9900;
 }
 
 .seven h2 {
@@ -59,21 +66,19 @@
   content: " ";
   display: block;
   background-color: #fff;
-  border-bottom: 1px solid #feaa1a;
+  border-bottom: 1px solid #ff6600;
   border-top: 1px solid #feaa1a;
   height: 10px;
   max-width: 120px;
-  background-color: #f8f8f8;
 }
 .seven h2:before {
   content: "";
   display: block;
   background-color: #fff;
-  border-bottom: 1px solid #feaa1a;
+  border-bottom: 1px solid #ff6600;
   border-top: 1px solid #feaa1a;
   height: 10px;
   max-width: 120px;
-  background-color: #f8f8f8;
   margin-left: 78%;
 }
 .our-values-container::after {
@@ -147,7 +152,7 @@
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #feaa1a;
+  background: linear-gradient(to bottom, #ff9900 1%, #ff6600 100%);
 }
 
 .overlay-image-container:hover .overlay {

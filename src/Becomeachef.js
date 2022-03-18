@@ -27,18 +27,7 @@ export default function Becomeachef() {
             what you love
           </h1>
           <p className="lead">
-            <a
-              href="/become-chef/register"
-              className=" text-decoration-none"
-              style={{
-                fontWeight: "bold",
-                color: "royalblue",
-                letterSpacing: 1.5,
-              }}
-            >
-              Get Started
-            </a>{" "}
-            to be your own boss and cook whenever you want.
+            Sign up to be your own boss and cook whenever you want.
           </p>
         </div>
         <img
@@ -47,26 +36,43 @@ export default function Becomeachef() {
           className="img-fluid"
           style={{ height: "720px", width: "100%" }}
         />
-        <div
-          style={{
-            position: "absolute",
-            left: "40%",
-            top: "80%",
-            flexDirection: "row",
-          }}
-        >
-          <MobileStoreButton
-            store="ios"
-            height={60}
-            width={166}
-            url={iOSUrl}
-            linkProps={{ title: "Download Feasti" }}
-          />
-          <MobileStoreButton
-            store="android"
-            url={androidUrl}
-            linkProps={{ title: "Download Feasti" }}
-          />
+        <div className="row">
+          <div className="col-sm-6">
+            <a
+              href="/become-chef/register"
+              className="btn btn-danger float-right"
+              style={{
+                borderRadius: 40,
+                position: "absolute",
+                left: "10%",
+                top: "80%",
+              }} //
+            >
+              Get Started
+            </a>
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              left: "40%",
+              top: "80%",
+              flexDirection: "row",
+            }}
+            className="col-sm-6"
+          >
+            <MobileStoreButton
+              store="ios"
+              height={60}
+              width={166}
+              url={iOSUrl}
+              linkProps={{ title: "Download Feasti" }}
+            />
+            <MobileStoreButton
+              store="android"
+              url={androidUrl}
+              linkProps={{ title: "Download Feasti" }}
+            />
+          </div>
         </div>
       </div>
       <WhatisChef />
