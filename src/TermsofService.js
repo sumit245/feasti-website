@@ -7,7 +7,7 @@ import Header from "./Header";
 const options = {
   cMapUrl: "cmaps/",
   cMapPacked: true,
-  standardFontDataUrl: "standard_fonts/",
+  standardFontDataUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/standard_fonts`,
 };
 export default function TermsofService() {
   const [file, setFile] = useState("./tnc.pdf");
@@ -33,7 +33,7 @@ export default function TermsofService() {
         options={options}
       >
         {Array.from(new Array(numPages), (el, index) => (
-          <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+          <Page key={`page_${index + 1}`} pageNumber={index + 1} scale={2} />
         ))}
       </Document>
       <Footer />

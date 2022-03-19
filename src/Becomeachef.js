@@ -68,7 +68,7 @@ export default function Becomeachef() {
             left: "4%",
             width: 140,
             fontWeight:"bold",
-            top: "100%",
+            top: "69%",
           }}
         >
           Get Started
