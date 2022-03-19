@@ -36,44 +36,43 @@ export default function Becomeachef() {
           className="img-fluid"
           style={{ height: "720px", width: "100%" }}
         />
-        <div className="row">
-          <div className="col-sm-6">
-            <a
-              href="/become-chef/register"
-              className="btn btn-danger float-right"
-              style={{
-                borderRadius: 40,
-                position: "absolute",
-                left: "10%",
-                top: "80%",
-              }} //
-            >
-              Get Started
-            </a>
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              left: "40%",
-              top: "80%",
-              flexDirection: "row",
-            }}
-            className="col-sm-6"
-          >
-            <MobileStoreButton
-              store="ios"
-              height={60}
-              width={166}
-              url={iOSUrl}
-              linkProps={{ title: "Download Feasti" }}
-            />
-            <MobileStoreButton
-              store="android"
-              url={androidUrl}
-              linkProps={{ title: "Download Feasti" }}
-            />
-          </div>
+
+        <div
+          style={{
+            position: "absolute",
+            left: "40%",
+            top: "80%",
+            flexDirection: "row",
+          }}
+          className="col-sm-6"
+        >
+          <MobileStoreButton
+            store="ios"
+            height={60}
+            width={166}
+            url={iOSUrl}
+            linkProps={{ title: "Download Feasti" }}
+          />
+          <MobileStoreButton
+            store="android"
+            url={androidUrl}
+            linkProps={{ title: "Download Feasti" }}
+          />
         </div>
+        <a
+          href="/become-chef/register"
+          className="btn btn-danger float-right"
+          style={{
+            borderRadius: 40,
+            position: "absolute",
+            left: "4%",
+            width: 140,
+            fontWeight:"bold",
+            top: "100%",
+          }}
+        >
+          Get Started
+        </a>
       </div>
       <WhatisChef />
       <WhyBecomeChef />

@@ -1,6 +1,8 @@
 import React from "react";
 import MobileStoreButton from "react-mobile-store-button/lib/MobileStoreButton";
-import { FaFacebookF, FaInstagram,FaLinkedinIn } from "react-icons/fa";
+import LinkedIn from "./assets/linked_in.png";
+import Instagram from "./assets/Ig-logo.svg";
+import Facebook from "./assets/fb-logo.svg";
 
 export default function Footer() {
   const iOSUrl =
@@ -8,14 +10,19 @@ export default function Footer() {
   const androidUrl =
     "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
   return (
-    <footer className="bg-dark">
-      <div className="row align-items-center bg-black py-4 mx-0">
+    <footer className="bg-grad">
+      <div className="row align-items-center bg-dark py-4 mx-0">
         <div className="col-sm-10">
           <div className="row align-items-center">
             <div className="col-sm-8">
-              <h4 className="text-white text-right" style={{marginLeft:"40%"}} >Download the app</h4>
+              <h4
+                className="text-white text-right"
+                style={{ marginLeft: "40%" }}
+              >
+                Download the app
+              </h4>
             </div>
-            <div className="col-sm-4 pl-0" style={ {marginLeft:"-20%"}}>
+            <div className="col-sm-4 pl-0" style={{ marginLeft: "-20%" }}>
               <div className="row align-items-center">
                 <MobileStoreButton
                   store="ios"
@@ -44,7 +51,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-white-50 text-decoration-none mx-2"
             >
-              <FaFacebookF />
+              <img src={Facebook} height={30} width={30} alt="instagram" />
             </a>
             <a
               href="https://www.instagram.com/feasti"
@@ -52,7 +59,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-white-50 text-decoration-none mx-2"
             >
-              <FaInstagram />
+              <img src={Instagram} height={30} width={30} alt="instagram" />
             </a>
             <a
               href="https://www.instagram.com/feasti"
@@ -60,7 +67,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-white-50 text-decoration-none mx-2"
             >
-              <FaLinkedinIn />
+              <img src={LinkedIn} height={30} width={30} alt="instagram" />
             </a>
           </h5>
         </div>
@@ -68,36 +75,36 @@ export default function Footer() {
 
       <div className="row py-4 mx-0">
         <div className=" col-sm-8">
-          <span className="text-white-50 text-small" style={{fontSize:14}}>
+          <span className="text-white text-small" style={{ fontSize: 14 }}>
             © Feasti, Inc. 2022. All Rights Reserved.
           </span>
         </div>
         <div className="col-sm-4">
-        <a
-            href="/privacy-policy"
-            className="text-white-50 text-decoration-none mx-2"
-            style={{fontSize:14}}
+          <a
+            href="/contacts"
+            className="text-white text-decoration-none mx-2"
+            style={{ fontSize: 14 }}
           >
             Contact us
           </a>
           <a
             href="/privacy-policy"
-            className="text-white-50 text-decoration-none mx-2"
-            style={{fontSize:14}}
+            className="text-white text-decoration-none mx-2"
+            style={{ fontSize: 14 }}
           >
             Privacy Policy
           </a>
           <a
             href="/terms-of-service"
-            className="text-white-50 text-decoration-none mx-2"
-            style={{fontSize:14}}
+            className="text-white text-decoration-none mx-2"
+            style={{ fontSize: 14 }}
           >
             Terms of Service
           </a>
           <a
             href="/become-chef/register"
-            className="text-white-50 text-decoration-none mx-2"
-            style={{fontSize:14}}
+            className="text-white text-decoration-none mx-2"
+            style={{ fontSize: 14 }}
           >
             Join Feasti
           </a>

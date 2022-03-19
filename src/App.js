@@ -13,6 +13,7 @@ import Values from "./home/Values";
 import Featured from "./home/Featured";
 import MeettheChef from "./home/MeettheChef";
 import Testimonials from "./home/testimonials";
+import Contacts from "./Contacts";
 
 function Home() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/become-chef/register" element={<Register />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsofService />} />
+          <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>

@@ -1,19 +1,14 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import Quotation from "../assets/quotation.svg";
 
 const items = [
   <div className="row">
     <div className="col-sm-6 bg-light px-5 py-5">
       <div className="left">
         <p className="left">
-          <img
-            src="https://cdn.shef.com/static/media/Quote_Icon.5d24a819.svg"
-            className="sc-mlOqW flXQvI"
-            alt="text"
-            height={20}
-            width={20}
-          />
+          <img src={Quotation} alt="text" height={20} width={20} />
           &nbsp;&nbsp; I have been ordering from Feasti for the past 6 months
           and it's been benefiting my health. The meals are hygienic and it was
           a great effort from the team to deliver proper homemade and hygienic
@@ -26,13 +21,7 @@ const items = [
     <div className="col-sm-6 bg-light px-5 py-5">
       <div className="left">
         <p className="left">
-          <img
-            src="https://cdn.shef.com/static/media/Quote_Icon.5d24a819.svg"
-            className="sc-mlOqW flXQvI"
-            alt="text"
-            height={20}
-            width={20}
-          />
+          <img src={Quotation} alt="text" height={20} width={20} />
           &nbsp;&nbsp; I have been ordering from Feasti for the past 6 months
           and it's been benefiting my health. The meals are hygienic and it was
           a great effort from the team to deliver proper homemade and hygienic
