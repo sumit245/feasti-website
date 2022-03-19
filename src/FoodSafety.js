@@ -1,5 +1,6 @@
 import React from "react";
-
+import Trust from "./assets/Trust_Icon.svg";
+import Safety from "./assets/Safety_Icon.svg";
 export default function FoodSafety() {
   return (
     <div className="row mx-2 my-4">
@@ -21,7 +22,7 @@ export default function FoodSafety() {
         <div className="row my-5 mx-5 justify-content-evenly">
           <div className="col-sm-6">
             <img
-              src="https://cdn.shef.com/static/media/Safety_Icon.1ef71965.svg"
+              src={Safety}
               className="sc-jdPOdc cuvzLK"
               alt="food-safety-training"
             />
@@ -34,10 +35,7 @@ export default function FoodSafety() {
             </div>
           </div>
           <div className="col-sm-6">
-            <img
-              src="https://cdn.shef.com/static/media/Trust_Icon.0c7a428b.svg"
-              alt="food-safety-instrument"
-            />
+            <img src={Trust} alt="food-safety-instrument" />
             <h3 className="text-dark my-4">Trusted by thousands of people</h3>
             <div className="col-sm-10">
               Feasti is used every day by thousands of customers around the

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Page, Document, pdfjs } from "react-pdf";
+
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -28,15 +29,18 @@ export default function PrivacyPoilcy() {
   return (
     <div>
       <Header />
-      <Document
-        file={file}
-        onLoadSuccess={onDocumentLoadSuccess}
-        options={options}
-      >
-        {Array.from(new Array(numPages), (el, index) => (
-          <Page key={`page_${index + 1}`} pageNumber={index + 1} />
-        ))}
-      </Document>
+      <div className="Example__container__document">
+        <Document
+          file={file}
+          onLoadSuccess={onDocumentLoadSuccess}
+          options={options}
+          className="container-lg"
+        >
+          {Array.from(new Array(numPages), (el, index) => (
+            <Page key={`page_${index + 1}`} pageNumber={index + 1} size="A4" scale={4} />
+          ))}
+        </Document>
+      </div>
       <Footer />
     </div>
   );

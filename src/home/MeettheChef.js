@@ -2,8 +2,7 @@ import React from "react";
 import { Slide } from "material-auto-rotating-carousel";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-
-const { withStyles } = require("@material-ui/core/styles");
+import { withStyles } from "@material-ui/styles";
 
 const styles = {
   root: {
@@ -22,25 +21,28 @@ const styles = {
   },
   title: {
     color: "#fff",
-    backgroundColor: "#ff9900",
+    backgroundColor: "transparent",
     zIndex: 1000,
     fontSize: 22,
   },
   subtitle: {
     color: "#fff",
-    backgroundColor: "#ff6600",
+    backgroundColor: "transparent",
     paddingBottom: 40,
     zIndex: 1000,
   },
   textMobileLandscape: {
-    color: "#fff",
-    backgroundColor: "#ff6600",
     padding: 20,
     width: 496,
     paddingBottom: 40,
     marginLeft: -48,
     marginTop: -20,
     zIndex: 1000,
+    background: "linear-gradient(135deg, #FF9900 30%, #FF6600 90%)",
+    border: 0,
+    borderRadius: 3,
+    boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+    color: "white",
   },
 };
 const StyledSlide = withStyles(styles)(Slide);

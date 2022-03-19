@@ -27,15 +27,18 @@ export default function TermsofService() {
   return (
     <div>
       <Header />
+      <div className="Example__container__document">
       <Document
         file={file}
         onLoadSuccess={onDocumentLoadSuccess}
         options={options}
+        className="container-lg"
       >
         {Array.from(new Array(numPages), (el, index) => (
           <Page key={`page_${index + 1}`} pageNumber={index + 1} scale={2} />
         ))}
-      </Document>
+        </Document>
+        </div>
       <Footer />
     </div>
   );

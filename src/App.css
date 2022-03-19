@@ -14,8 +14,12 @@
   font-family: semanko;
   src: url("./assets/fonts/SEMANKO-PersonalUse.otf");
 }
+@font-face {
+  font-family: veggy;
+  src: url("./assets/fonts/veggy.ttf");
+}
 .App-logo {
-  font-family: semanko;
+  font-family: hotpizza;
   text-align: center;
   font-size: 128;
   font-weight: bolder;
@@ -34,10 +38,6 @@
   top: 20%;
   left: 5%;
   z-index: 20;
-  /* font-size: 128px;
-  font-weight: bold;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); */
 }
 .carousel-form {
   position: absolute;
@@ -58,19 +58,21 @@
   font-weight: bold;
   color: #ff9900;
   text-shadow: #282c34;
-  
 }
-.gradient-text{
+.gradient-text {
   font-size: 64px;
   font-weight: bold;
   color: #ff9900;
   background: #ff9900;
-  background: -webkit-linear-gradient(to bottom right, #ff9900 0%, #cf1512 100%);
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #ff9900 0%,
+    #cf1512 100%
+  );
   background: -moz-linear-gradient(to bottom right, #ff9900 0%, #cf1512 100%);
   background: linear-gradient(to bottom right, #ff9900 0%, #cf1512 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .btn-danger {
@@ -116,7 +118,7 @@
   left: 0;
   height: 240px;
   width: 100%;
-  background: url("./assets/wave.svg") bottom center;
+  background: url("./assets/wave.png") bottom center;
 }
 .bg-grad {
   background: linear-gradient(to bottom right, #ff9900 1%, #ff6600 100%);
@@ -211,4 +213,42 @@
 }
 .alice-carousel {
   width: auto;
+}
+.pdf-custom {
+  width: 840px;
+  min-width: 640px;
+}
+.Example__container__document {
+  margin: 1em 0;
+}
+
+.Example__container__document .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Example__container__document .react-pdf__Page {
+  max-width: calc(100% - 2em);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin: 1em;
+}
+
+.Example__container__document .react-pdf__Page canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.Example__container__document .react-pdf__message {
+  padding: 20px;
+  color: white;
+}
+
+.Example__container__document
+  .react-pdf__Page
+  canvas
+  .react-pdf__Page__textContent
+  span {
+  font-size: 16px !important;
+  margin: 0;
 }
