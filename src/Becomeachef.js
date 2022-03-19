@@ -1,6 +1,6 @@
 import React from "react";
 import MobileStoreButton from "react-mobile-store-button/lib/MobileStoreButton";
-import Img1 from "./assets/imagebg.jpg";
+import Img1 from "./assets/image.webp";
 import ChefReview from "./ChefReview";
 import FoodSafety from "./FoodSafety";
 import Footer from "./Footer";
@@ -26,7 +26,7 @@ export default function Becomeachef() {
             Earn money doing <br />
             what you love
           </h1>
-          <p className="lead">
+          <p className="lead" style={{color:"#fff"}}>
             Sign up to be your own boss and cook whenever you want.
           </p>
         </div>

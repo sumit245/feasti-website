@@ -1,5 +1,5 @@
 import React from "react";
-import Img1 from "./assets/imagebg.jpg";
+import Img1 from "./assets/9.webp";
 import "./App.css";
 import MobileStoreButton from "react-mobile-store-button/lib/MobileStoreButton";
 
@@ -11,7 +11,7 @@ export default function BannerCarousel() {
   return (
     <div>
       <div className="carousel-content">
-        <h1 className="text-on-carousel">
+        <h1 className="gradient-text">
           Homemade Food.
           <br />
           Subscription based
