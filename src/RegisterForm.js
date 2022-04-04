@@ -28,7 +28,7 @@ export default function RegisterForm() {
   const onSubmit = async () => {
     setLoading(true);
     const response = await axios.post(
-      "http://munkybox-admin.herokuapp.com/api/partnerrequest/",
+      "https://feasti.com/api/partnerrequest/",
       state
     );
     const { status, msg } = response.data;

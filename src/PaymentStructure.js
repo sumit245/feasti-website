@@ -6,11 +6,15 @@ import Icon4 from "./assets/icon-04.png";
 export default function PaymentStructure() {
   return (
     <section className=" pt-5 pb-5">
-      <div className="text-center my-4 seven">
-        <h2 className="text-center text-black" style={{ fontWeight: "bolder" }}>
-          Transparent fees, Direct payments
-        </h2>
+      <div className="row mt-4 justify-content-center">
+        <div className="header-container">
+          <h2 className="text-center text-black" style={{ fontWeight: "bolder" }}>
+            Transparent fees, Direct payments
+          </h2>
+        </div>
       </div>
+
+
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6 my-4">
@@ -23,7 +27,7 @@ export default function PaymentStructure() {
                 />
               </div>
               <div>
-                <h5>No fee to join Feasti</h5>
+                <h6 style={{ color: "#444", fontWeight: 'bold' }}>No fee to join Feasti</h6>
                 <span className="text-justify">
                   {" "}
                   There is absolutely no fees to join Feasti. In fact, our team
@@ -43,7 +47,7 @@ export default function PaymentStructure() {
                 />
               </div>
               <div>
-                <h5>We only make money if you make money</h5>
+                <h6 style={{ color: "#444", fontWeight: 'bold' }}>We only make money if you make money</h6>
                 <span className="text-justify">
                   {" "}
                   Feasti takes a flexible commmission on every transaction,
@@ -63,7 +67,7 @@ export default function PaymentStructure() {
                 />
               </div>
               <div>
-                <h5>Easy direct deposit setup</h5>
+                <h6 style={{ color: "#444", fontWeight: 'bold' }}>Easy direct deposit setup</h6>
                 <span className="text-justify">
                   {" "}
                   Easily connect your bank account to your Feasti cook account,
@@ -83,7 +87,7 @@ export default function PaymentStructure() {
                 />
               </div>
               <div>
-                <h5>Get paid on every order</h5>
+                <h6 style={{ color: "#444", fontWeight: 'bold' }}>Get paid on every order</h6>
                 <span className="desc-info">
                   {" "}
                   A direct deposit payment is sent your way for every order you

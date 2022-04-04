@@ -6,13 +6,12 @@ import Explore from "./assets/foodsearch.gif";
 export default function HowItWorks() {
   return (
     <>
-      <div className="row mt-4 seven">
-        <h2
-          className="text-black text-center my-4 mb-4"
-          style={{ fontWeight: "bolder" }}
-        >
-          How it works
-        </h2>
+      <div className="row mt-4 justify-content-center">
+        <div className="header-container">
+          <h2 className="text-black">
+            How it works
+          </h2>
+        </div>
       </div>
       <div className="row mt-4 mx-4">
         <div className="col-sm-4 text-center ">
@@ -22,8 +21,8 @@ export default function HowItWorks() {
             style={{ height: 240, width: 320 }}
             alt=""
           />
-          <h4 className="text-center my-3">
-            <span>Explore</span>
+          <h4 className="text-center my-3" style={{ color: "#666" }}>
+            Explore
           </h4>
           <p className="text-center">
             Discover homemade meals near you. All of our HomeCooks are carefully
@@ -37,8 +36,8 @@ export default function HowItWorks() {
             style={{ height: 240, width: 320 }}
             alt=""
           />
-          <h4 className="text-center my-3">
-            <span className="navy">Easy Subscription</span>
+          <h4 className="text-center my-3" style={{ color: "#666" }}>
+            Easy Subscription
           </h4>
           <p className="text-center">
             Lunch and Dinner made super easy. Choose weekly or monthly plans,
@@ -52,8 +51,8 @@ export default function HowItWorks() {
             style={{ height: 240, width: 320 }}
             alt=""
           />
-          <h4 className="text-center my-3">
-            <span className="navy">Enjoy</span>
+          <h4 className="text-center my-3" style={{ color: "#666" }}>
+            Enjoy
           </h4>
           <p className="text-center">
             Affordable healthy meals, Get your order delivered directly to your

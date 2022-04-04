@@ -6,9 +6,9 @@ import Store from "./assets/Store_Icon.svg"
 
 export default function Help() {
   return (
-    <div>
-      <div className="row mx-2 my-5">
-        <div className="seven">
+    <>
+      <div className="row mx-2 my-5 justify-content-center">
+        <div className="header-container">
           <h2
             className="text-black my-4 text-center"
             style={{ fontWeight: "bolder" }}
@@ -16,13 +16,14 @@ export default function Help() {
             An extra hand in the kitchen…
           </h2>
         </div>
-
+      </div>
+      <div className="row mx-4 my-3">
         <div className="col-sm-6 my-4">
           <img
             src={Chat}
             alt="cht-with-us"
           />
-          <h3 className="text-dark my-4">Support via email and text</h3>
+          <h3 className="my-4" style={{ color: "#666" }}>Support via email and text</h3>
           <div className="text-justify">
             Reach out to our Cook Support Team via email or text message
             anytime, and a representative will get back to you asap!
@@ -33,7 +34,7 @@ export default function Help() {
             src={Food}
             alt="passion"
           />
-          <h3 className="text-dark my-4">
+          <h3 className="my-4" style={{ color: "#666" }}>
             Software to handle the business stuff
           </h3>
           <div>
@@ -42,12 +43,14 @@ export default function Help() {
             of that for you!
           </div>
         </div>
+      </div>
+      <div className="row mx-4 my-3">
         <div className="col-sm-6 mt-5 my-4">
           <img
             src={Store}
             alt="shop-online"
           />
-          <h3 className="text-dark my-4">Craft your menu</h3>
+          <h3 className="my-4" style={{ color: "#666" }}>Craft your menu</h3>
           <div>
             Our team has expert photographers on staff to help you
             <br />
@@ -59,7 +62,7 @@ export default function Help() {
         </div>
         <div className="col-sm-6 mt-5 my-4">
           <img src={Bulb} alt="idea" />
-          <h3 className="text-dark my-4">Get advice</h3>
+          <h3 className="my-4" style={{ color: "#666" }}>Get advice</h3>
           <div>
             Any-time access to our extensive knowledgebase, full of helpful
             articles and video tutorials on how to grow your home cooking
@@ -67,6 +70,8 @@ export default function Help() {
           </div>
         </div>
       </div>
-    </div>
+
+      {/* </div> */}
+    </>
   );
 }

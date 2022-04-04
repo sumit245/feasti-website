@@ -3,16 +3,17 @@ import React from "react";
 export default function SellingSteps() {
   return (
     <div className="bg-light py-3">
-      <div className="row mx-1 my-4">
-        <div className="seven">
+      <div className="row mx-1 my-4 justify-content-center">
+        <div className="header-container">
           <h2
-            className="text-black my-5 text-center"
+            className="text-black text-center"
             style={{ fontWeight: "bolder" }}
           >
             How to sell on Feasti
           </h2>
         </div>
       </div>
+
       <div className="row mx-5 ml-5">
         <div className="col-sm-2 mx-3">
           <img
@@ -27,8 +28,8 @@ export default function SellingSteps() {
             1
           </h2>
           <h6
-            className="text-justify text-dark mt-2 mb-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify mt-2 mb-3"
+            style={{ fontWeight: "bolder", color: "#666" }}
           >
             Get approved to cook
           </h6>
@@ -55,8 +56,8 @@ export default function SellingSteps() {
             2
           </h2>
           <h6
-            className="text-justify text-dark mt-2 mb-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify mt-2 mb-3"
+            style={{ fontWeight: "bolder", color: "#666" }}
           >
             Your Dishes Your Prices
           </h6>
@@ -77,8 +78,8 @@ export default function SellingSteps() {
             3
           </h2>
           <h6
-            className="text-justify text-dark mt-2 mb-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify mt-2 mb-3"
+            style={{ fontWeight: "bolder", color: "#666" }}
           >
             Set Your Own Schedule
           </h6>
@@ -99,8 +100,8 @@ export default function SellingSteps() {
             4
           </h2>
           <h6
-            className="text-justify text-dark mt-2 mb-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify mt-2 mb-3"
+            style={{ fontWeight: "bolder", color: "#666" }}
           >
             Prepare Your Orders
           </h6>
@@ -122,8 +123,8 @@ export default function SellingSteps() {
             5
           </h2>
           <h6
-            className="text-justify text-dark mt-2 mb-3"
-            style={{ fontWeight: "bolder" }}
+            className="text-justify mt-2 mb-3"
+            style={{ fontWeight: "bolder", color: "#666" }}
           >
             Serve Your Customers
           </h6>

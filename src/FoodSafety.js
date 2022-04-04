@@ -5,14 +5,13 @@ export default function FoodSafety() {
   return (
     <div className="row mx-2 my-4">
       <div>
-        <div className="seven">
-          <h2
-            className="text-black text-center my-4"
-            style={{ fontWeight: "bolder" }}
-          >
-            Cooking safely
-          </h2>
-        </div>
+
+        <h2
+          className="text-black text-center my-4"
+          style={{ fontWeight: "bolder", textDecorationColor: "#ff6600", textDecorationLine: "underline" }}
+        >
+          Cooking safely
+        </h2>
 
         <img
           src="https://cdn.shef.com/static/media/cooking-safely.7001665c.jpg"

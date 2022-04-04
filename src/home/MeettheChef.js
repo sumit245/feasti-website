@@ -108,13 +108,15 @@ const items = [
 export default function MeettheChef() {
   return (
     <div>
-      <div className="row mt-4 seven">
+      <div className="row mt-4 my-4 justify-content-center">
+        <div className="header-container">
         <h2
-          className="text-black text-center my-4 mb-4"
+          className="text-black"
           style={{ fontWeight: "bolder" }}
         >
-          Meet the chef
+          Why try feasti?
         </h2>
+        </div>
       </div>
       <div className="container">
         <AliceCarousel

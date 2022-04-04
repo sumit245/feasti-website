@@ -3,13 +3,16 @@ import React from "react";
 export default function Featured() {
   return (
     <>
-      <div className="row mt-4 seven">
+      <div className="row mt-4 justify-content-center">
+        <div className="header-container">
         <h2
-          className="text-black text-center my-4 mb-4"
+          className="text-black"
           style={{ fontWeight: "bolder" }}
         >
           Featured Chefs
         </h2>
+        </div>
+        
       </div>
       <div className="row mx-2 my-4">
         <div className="col-6">

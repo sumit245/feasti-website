@@ -1,10 +1,11 @@
 import React from "react";
-
+import Logo from "./assets/logo_feasti1.png"
 export default function Header() {
   return (
-    <nav className="navbar mx-2">
-      <a href="/" className="text-decoration-none">
-        <h3 className="App-logo">Feasti</h3>
+    <nav className="navbar navbar-light">
+      <a href="/" className="navbar-brand" style={{fontWeight:'bold'}}>
+        <img src={Logo} width={48} height={48} className="d-inline-block align-center" alt="" />
+        Feasti
       </a>
       <a
         href="/become-chef"
