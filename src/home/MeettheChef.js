@@ -1,131 +1,97 @@
-import React from "react";
-import { Slide } from "material-auto-rotating-carousel";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-import { withStyles } from "@material-ui/styles";
+import React, { useState, useEffect } from 'react';
+import { AiFillStar } from 'react-icons/ai';
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex;
+  // While there remain elements to shuffle.
+  while (currentIndex !== 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+  return array;
+}
 
-const styles = {
-  root: {
-    backgroundColor: "#fff",
-    height: 640,
-    width: 1000,
-  },
-  media: {
-    backgroundColor: "#fff",
-    padding: 4,
-    borderColor: "#ff6600",
-    borderWidth: 1,
-    borderStyle: "solid",
-    height: 640,
-    width: 800,
-  },
-  title: {
-    color: "#fff",
-    backgroundColor: "transparent",
-    zIndex: 1000,
-    fontSize: 22,
-  },
-  subtitle: {
-    color: "#fff",
-    backgroundColor: "transparent",
-    paddingBottom: 40,
-    zIndex: 1000,
-  },
-  textMobileLandscape: {
-    padding: 20,
-    width: 496,
-    paddingBottom: 40,
-    marginLeft: -48,
-    marginTop: -20,
-    zIndex: 1000,
-    background: "linear-gradient(135deg, #FF9900 30%, #FF6600 90%)",
-    border: 0,
-    borderRadius: 3,
-    boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-    color: "white",
-  },
-};
-const StyledSlide = withStyles(styles)(Slide);
-const items = [
-  <StyledSlide
-    mediaBackgroundStyle={{ backgroundColor: "#fff" }}
-    media={
-      <img
-        src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=787&q=80"
-        alt=""
-        style={{ height: 640, width: 640 }}
-      />
-    }
-    subtitle={[
-      <strong>Fresh & Made-to-Order</strong>,
-      <br />,
-      <br />,
-      "Our HomeCooks purchase ingredients locally and prepare dishes to suit your dietary preferences. ",
-    ]}
-    mobile
-    landscape
-  >
-    <p className="lead">
-      Our HomeCooks purchase ingredients locally and prepare dishes to suit your
-      dietary preferences.
-    </p>
-  </StyledSlide>,
-  <StyledSlide
-    media={
-      <img
-        src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80"
-        alt=""
-        style={{ height: 640, width: 640 }}
-      />
-    }
-    subtitle={[
-      <strong>Support Local Cooks</strong>,
-      <br />,
-      <br />,
-      "Help empower local talented folks in your community with the opportunity to share their delicious culinary creations",
-    ]}
-    mobile
-    landscape
-  />,
-  <StyledSlide
-    media={
-      <img
-        src="https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80"
-        alt=""
-        style={{ height: 640, width: 640 }}
-      />
-    }
-    subtitle={[
-      <strong>Experience Authentic Food</strong>,
-      <br />,
-      <br />,
-      "Enjoy a worldly culinary experience without even having to step outside of your neighborhood.",
-    ]}
-    mobile
-    landscape
-  />,
-];
 export default function MeettheChef() {
+  const [restaurant, setRestaurant] = useState([]);
+  const fetchRestaurant = async () => {
+    const response = await fetch('https://feasti.com/api/newrest/', {
+      method: 'GET',
+    });
+    const data = await response.json();
+    let rest = shuffle(data);
+    rest.length = 3;
+    setRestaurant(rest);
+  };
+
+  useEffect(() => {
+    let Mounted = true;
+    fetchRestaurant();
+    return () => {
+      Mounted = false;
+    };
+  }, []);
+
   return (
-    <div>
-      <div className="row mt-4 my-4 justify-content-center">
-        <div className="header-container">
-        <h2
-          className="text-black"
-          style={{ fontWeight: "bolder" }}
-        >
-          Why try feasti?
-        </h2>
+    <section className="row mt-4 justify-content-center">
+      <h4 className="text-center">Our Home Chefs are the best at cooking</h4>
+
+      <div className="container">
+        <div className="row mx-5 my-4">
+          {restaurant.map((data, key) => (
+            <div className="col-sm-4" key={key}>
+              <div className="card">
+                <div className="row">
+                  <img
+                    src={data.documents[1].banner_image}
+                    style={{
+                      width: '99%',
+                      height: 180,
+                      margin: '0.5%',
+                      objectFit: 'cover',
+                    }}
+                    alt="Banner"
+                  />
+                </div>
+                <div className="row align-items-start my-2 mx-1">
+                  <div className="col-sm-2">
+                    <img
+                      className="border rounded-circle"
+                      alt="profile"
+                      src={data.documents[0].restaurant_image}
+                      style={{ height: 40, width: 40 }}
+                    />
+                  </div>
+                  <div className="col-sm-10">
+                    <div className="row">
+                      <div className="col-sm-10 text-wrapper">
+                        <h6 className="my-0 py-0">
+                          <b style={{fontSize:12,paddingBottom:2}} >{data.restaurant_name}</b>
+                          </h6>
+                        <p className="my-0 py-0 description">{data.about}</p>
+                      </div>
+                      <div className="col-sm-2">
+                        <AiFillStar size={12} className="gradient-text" />
+                        <strong
+                          className="gradient-text pb-2"
+                          style={{ fontSize: 10, fontWeight: 'bold' }}
+                        >
+                          5/5
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="container">
-        <AliceCarousel
-          mouseTracking
-          items={items}
-          disableButtonsControls
-          // autoPlay
-        />
-      </div>
-    </div>
+    </section>
   );
 }

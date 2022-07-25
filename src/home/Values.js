@@ -1,94 +1,106 @@
-import React from "react";
-import Lunch from "../assets/lunch.png";
-import ChefCommunity from "../assets/chefcommunity.webp";
-import Nourishing from "../assets/nourishing.webp";
-import Chef from "../assets/chef.png"
+import React from 'react';
+import {
+  GiBowlOfRice,
+  GiTakeMyMoney,
+  GiCampCookingPot,
+  GiOpenedFoodCan,
+  GiEarthAmerica,
+  GiShakingHands,
+} from 'react-icons/gi';
+
+import {MdDeliveryDining} from "react-icons/md"
 
 export default function Values() {
   return (
     <section className="my-4 py-5">
-      <div className="row mt-4 justify-content-center">
-        <div className="header-container">
-          <h2
-            className="text-black text-center"
-            style={{ fontWeight: "bolder" }}
-          >
-            Our Values
-          </h2>
+      <div className="container">
+        <p className="text-center">Feasti is specially designed for</p>
+        <h3
+          className="text-center"
+          style={{ textTransform: 'uppercase', fontSize: 20,fontWeight:'bold' }}
+        >
+          your home cooked foods made by local chefs
+        </h3>
+        <div className="row my-5">
+          <div className="col-sm-4 mt-5">
+            <div className="row my-4">
+              <div className="col-sm-4">
+                <GiBowlOfRice size={64} className="gradient-text" />
+              </div>
+              <div className="col-sm-8">
+                <p>
+                  Enjoy community through food in three steps.
+                  <br />
+                  <strong>Explore, Subscribe, Enjoy</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-4 mt-5">
+            <div className="row my-4">
+              <div className="col-sm-4">
+                <GiTakeMyMoney size={64} className="gradient-text" />
+              </div>
+              <div className="col-sm-8">
+                <p>
+                  Get Food with extra servings that too{' '}
+                  <strong>without emptying your wallet</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-4 mt-5">
+            <div className="row my-4">
+              <div className="col-sm-4">
+                <MdDeliveryDining size={64} className="gradient-text" />
+              </div>
+              <div className="col-sm-8">
+                <p>
+                  In a hurry to office? Reaching home late? Our chef will cook
+                  and <strong>deliver at your place.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-
-      </div>
-      <div className="our-values-container">
-        <div className="row" >
-          <div className="col-sm-3" style={{opacity:1}}>
-            <div className="text-center">
-              <img
-                src={Lunch}
-                alt="Sharing joy of homemade food"
-                style={{
-                  maxWidth: 320,
-                  maxHeight: 180,
-                  width: "auto",
-                  height: "auto",
-                }}
-              />
-              <div className=" mt-2 text-center">
-                <h5>Sharing Joy</h5>
-                <p>Enjoy community through food.</p>
+        <div className="row my-5">
+          <div className="col-sm-4 mt-5">
+            <div className="row my-4">
+              <div className="col-sm-4">
+                <GiShakingHands size={64} className="gradient-text" />
+              </div>
+              <div className="col-sm-8">
+                <p>
+                  Connect through cooking with <strong>local chefs</strong> in
+                  your community.
+                </p>
               </div>
             </div>
           </div>
-          <div className="col-sm-3"></div>
-          <div className="col-sm-3" style={{opacity:1}}>
-            <div className="text-center">
-              <img
-                src={Nourishing}
-                alt="Nourishing Neighbors"
-                style={{
-                  maxWidth: 320,
-                  maxHeight: 180,
-                  width: "auto",
-                  height: "auto",
-                }}
-              />
-              <div className=" mt-2 text-center">
-                <h5>Nourishing Neighbors</h5>
-                <p>Eat wholesome. Eat better.</p>
+          <div className="col-sm-4 mt-5">
+            <div className="row my-4">
+              <div className="col-sm-4">
+                <GiOpenedFoodCan size={64} className="gradient-text" />
+              </div>
+              <div className="col-sm-8">
+                <p>
+                  <strong>Unlock new flavour </strong>
+                  with your favourite taste from local chef in suitable time
+                  slot.
+                </p>
               </div>
             </div>
           </div>
-          <div className="col-sm-3"></div>
-        </div>
-        <div className="row my-4 ">
-          <div className="col-sm-3"></div>
-          <div className="col-sm-3">
-            <div className="text-center">
-              <img
-                src={ChefCommunity}
-                alt="Connecting community by homemade food"
-                style={{
-                  maxWidth: 320,
-                  maxHeight: 180,
-                  width: "auto",
-                  height: "auto",
-                }}
-              />
-              <div className=" mt-2 text-center">
-                <h5>Connecting Community</h5>
-                <p>Real people. Authentic passion</p>
+          <div className="col-sm-4 mt-5">
+            <div className="row my-4">
+              <div className="col-sm-4">
+                <GiEarthAmerica size={64} className="gradient-text" />
               </div>
-            </div>
-          </div>
-          <div className="col-sm-3"></div>
-          <div className="col-sm-3">
-            <div className="text-center">
-              <img
-                src={Chef}
-                alt="Earn money by cooking"
-              />
-              <div className="mt-2 text-center">
-                <h5>Cultivating Opportunity</h5>
-                <p>Empowering HomeCooks</p>
+              <div className="col-sm-8">
+                <p>
+                  <strong>Explore authentic cuisines </strong>
+                  from all over world without rushing into market.
+                </p>
               </div>
             </div>
           </div>

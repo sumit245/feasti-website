@@ -14,31 +14,69 @@ export default function Footer() {
       <div className="row align-items-center bg-dark py-4 mx-0">
         <div className="col-sm-10">
           <div className="row align-items-center">
-            <div className="col-sm-8">
+            <div className="col-sm-3">
               <h4
                 className="text-white text-right"
-                style={{ marginLeft: "40%" }}
+                style={{ marginLeft: '10%' }}
               >
                 Download the app
               </h4>
             </div>
-            <div className="col-sm-4 pl-0" style={{ marginLeft: "-20%" }}>
+            <div className="col-sm-4 pl-0">
               <div className="row align-items-center">
-                <MobileStoreButton
-                  store="ios"
-                  width={148}
-                  height={44}
-                  url={iOSUrl}
-                  linkProps={{ title: "Download Feasti" }}
-                />
+                <div className="col-sm-6">
+                  <span
+                    className="text-white text-center my-4"
+                    style={{
+                      fontSize: 18,
+                    }}
+                  >
+                    Customer App
+                  </span>
+                  <MobileStoreButton
+                    store="ios"
+                    width={166}
+                    height={60}
+                    url={iOSUrl}
+                    linkProps={{ title: 'Coming Soon' }}
+                    style={{ marginLeft: 10, marginTop: 20 }}
+                  />
 
-                <MobileStoreButton
-                  store="android"
-                  width={168}
-                  height={64}
-                  url={androidUrl}
-                  linkProps={{ title: "Download Feasti" }}
-                />
+                  <MobileStoreButton
+                    store="android"
+                    width={168}
+                    height={52}
+                    url={androidUrl}
+                    linkProps={{ title: 'Coming Soon' }}
+                  />
+                </div>
+                <div className="col-sm-6">
+                  <span
+                    className="text-white text-center my-4"
+                    style={{
+                      fontSize: 18,
+                      // marginLeft: -20,
+                    }}
+                  >
+                    Chef App
+                  </span>
+                  <MobileStoreButton
+                    store="ios"
+                    width={166}
+                    height={60}
+                    url={iOSUrl}
+                    linkProps={{ title: 'Coming Soon' }}
+                    style={{ marginLeft: 10, marginTop: 20 }}
+                  />
+
+                  <MobileStoreButton
+                    store="android"
+                    width={168}
+                    height={52}
+                    url={androidUrl}
+                    linkProps={{ title: 'Coming Soon' }}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -73,9 +111,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="row py-4 mx-0">
+      <div className="row py-0 mx-0">
         <div className=" col-sm-8">
-          <span className="text-white text-small" style={{ fontSize: 14 }}>
+          <span className="text-white text-small" style={{ fontSize: 12 }}>
             © Feasti, Inc. 2022. All Rights Reserved.
           </span>
         </div>
@@ -83,28 +121,28 @@ export default function Footer() {
           <a
             href="/contacts"
             className="text-white text-decoration-none mx-2"
-            style={{ fontSize: 14 }}
+            style={{ fontSize: 12 }}
           >
             Contact us
           </a>
           <a
             href="/privacy-policy"
             className="text-white text-decoration-none mx-2"
-            style={{ fontSize: 14 }}
+            style={{ fontSize: 12 }}
           >
             Privacy Policy
           </a>
           <a
             href="/terms-of-service"
             className="text-white text-decoration-none mx-2"
-            style={{ fontSize: 14 }}
+            style={{ fontSize: 12 }}
           >
             Terms of Service
           </a>
           <a
             href="/become-chef/register"
             className="text-white text-decoration-none mx-2"
-            style={{ fontSize: 14 }}
+            style={{ fontSize: 12 }}
           >
             Join Feasti
           </a>

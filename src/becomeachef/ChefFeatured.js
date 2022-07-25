@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Img2 from '../assets/home_screen_user.png';
-import Img1 from '../assets/login_screen_user.png';
-import Img3 from '../assets/result_details.png';
-import Img4 from '../assets/checkout.png';
-import Img5 from '../assets/my_orders.png';
-import Img6 from '../assets/subscription_user.png';
+import Img2 from '../assets/chef_dashboard.png';
+import Img1 from '../assets/chef_login.png';
+import Img3 from '../assets/chef_home.png';
+import Img4 from '../assets/chef_promo.png';
+import Img5 from '../assets/chef_dispatch.png';
+import Img6 from '../assets/chef_review.png';
 
-export default function Featured() {
+export default function ChefFeatured() {
   const [Img, setImage] = useState(Img1);
   const [highlighted, sethighlighted] = useState(1);
   const imageChanger = (selector) => {
@@ -33,9 +33,8 @@ export default function Featured() {
         ? sethighlighted(selector)
         : selector === 5
         ? sethighlighted(selector)
-        : sethighlighted(selector)
+        : sethighlighted(selector);
     setImage(select);
-    
   };
 
   return (
@@ -57,7 +56,7 @@ export default function Featured() {
                   <strong>GET STARTED</strong>
                 </h6>
                 <p>
-                  Login in a single step with just verifying your mobile number
+                  Login in a single step with just verifying your mobile number.
                 </p>
               </div>
             </div>
@@ -70,11 +69,11 @@ export default function Featured() {
                 onClick={() => imageChanger(2)}
               >
                 <h6>
-                  <strong>PERSONALIZE YOUR TASTEBUDS</strong>
+                  <strong>TRACK PERFORMANCE</strong>
                 </h6>
                 <p>
-                  Select meal of your choice with meal type, rating, a wide
-                  variety of cuisines.
+                  No need of separate book keeping of records as we provide a
+                  well sieved dashboard to fit your requirements.
                 </p>
               </div>
             </div>
@@ -87,11 +86,11 @@ export default function Featured() {
                 onClick={() => imageChanger(3)}
               >
                 <h6>
-                  <strong>CHEFS MENU & PLAN</strong>
+                  <strong>MENU MANAGEMENT</strong>
                 </h6>
                 <p>
-                  Placing your order is a piece of cake! Select plan of your
-                  choice based on your future plans.
+                  Keep record of all your meals so that you can prepare meal in
+                  exact amount.
                 </p>
               </div>
             </div>
@@ -113,12 +112,12 @@ export default function Featured() {
                 onClick={() => imageChanger(4)}
               >
                 <h6>
-                  <strong>EASY CHECKOUT</strong>
+                  <strong>PROMOTE YOUR RESTAURANT</strong>
                 </h6>
                 <p>
                   {' '}
-                  Select plan, pickup or delivery slot, make your payment, and
-                  you’re all set. Get Discount on your favorite meal upto 20%.
+                  Keep record of your promotion and revenue generated to manage
+                  your promotions.
                 </p>
               </div>
             </div>
@@ -131,11 +130,11 @@ export default function Featured() {
                 onClick={() => imageChanger(5)}
               >
                 <h6>
-                  <strong>VIEW ORDERS</strong>
+                  <strong>EASY DISPATCH</strong>
                 </h6>
                 <p>
-                  Manage your orders for future reference and you can directly
-                  reorder from your past meal.
+                  Get location, add-ons and contact of the customer so no meal
+                  get mistaken.
                 </p>
               </div>
             </div>
@@ -148,11 +147,10 @@ export default function Featured() {
                 onClick={() => imageChanger(6)}
               >
                 <h6>
-                  <strong>ADD EXTRA MEALS TO SUBSCRIPTION</strong>
+                  <strong>MANAGE YOUR REVIEWS</strong>
                 </h6>
                 <p>
-                  Just view your subscription to add some extra meals or
-                  delivery notes before your orders gets delivered.
+                  Customers are supreme for us so we dont let any customers go unsatisfied.
                 </p>
               </div>
             </div>
