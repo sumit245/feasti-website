@@ -89,7 +89,13 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-white-50 text-decoration-none mx-2"
             >
-              <img src={Facebook} height={30} width={30} alt="instagram" />
+              <img
+                src={Facebook}
+                height={30}
+                width={30}
+                alt="instagram"
+                loading="lazy"
+              />
             </a>
             <a
               href="https://www.instagram.com/feasti"
@@ -97,7 +103,13 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-white-50 text-decoration-none mx-2"
             >
-              <img src={Instagram} height={30} width={30} alt="instagram" />
+              <img
+                src={Instagram}
+                height={30}
+                width={30}
+                alt="instagram"
+                loading="lazy"
+              />
             </a>
             <a
               href="https://www.instagram.com/feasti"
@@ -105,7 +117,13 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-white-50 text-decoration-none mx-2"
             >
-              <img src={LinkedIn} height={30} width={30} alt="instagram" />
+              <img
+                src={LinkedIn}
+                height={30}
+                width={30}
+                alt="instagram"
+                loading="lazy"
+              />
             </a>
           </h5>
         </div>

@@ -3,12 +3,9 @@ import { AiFillStar } from 'react-icons/ai';
 function shuffle(array) {
   let currentIndex = array.length,
     randomIndex;
-  // While there remain elements to shuffle.
   while (currentIndex !== 0) {
-    // Pick a remaining element.
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
-    // And swap it with the current element.
     [array[currentIndex], array[randomIndex]] = [
       array[randomIndex],
       array[currentIndex],
@@ -31,7 +28,9 @@ export default function MeettheChef() {
 
   useEffect(() => {
     let Mounted = true;
-    fetchRestaurant();
+    if (Mounted) {
+      fetchRestaurant();
+    }
     return () => {
       Mounted = false;
     };
@@ -56,6 +55,7 @@ export default function MeettheChef() {
                       objectFit: 'cover',
                     }}
                     alt="Banner"
+                    loading="lazy"
                   />
                 </div>
                 <div className="row align-items-start my-2 mx-1">
@@ -65,14 +65,17 @@ export default function MeettheChef() {
                       alt="profile"
                       src={data.documents[0].restaurant_image}
                       style={{ height: 40, width: 40 }}
+                      loading="lazy"
                     />
                   </div>
                   <div className="col-sm-10">
                     <div className="row">
                       <div className="col-sm-10 text-wrapper">
                         <h6 className="my-0 py-0">
-                          <b style={{fontSize:12,paddingBottom:2}} >{data.restaurant_name}</b>
-                          </h6>
+                          <b style={{ fontSize: 12, paddingBottom: 2 }}>
+                            {data.restaurant_name}
+                          </b>
+                        </h6>
                         <p className="my-0 py-0 description">{data.about}</p>
                       </div>
                       <div className="col-sm-2">

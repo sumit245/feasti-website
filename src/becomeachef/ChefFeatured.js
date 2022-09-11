@@ -100,6 +100,7 @@ export default function ChefFeatured() {
               src={Img}
               style={{ height: '640px', width: 'auto' }}
               alt="background"
+              loading="lazy"
             />
           </div>
           <div className="col-sm-4">
@@ -150,7 +151,8 @@ export default function ChefFeatured() {
                   <strong>MANAGE YOUR REVIEWS</strong>
                 </h6>
                 <p>
-                  Customers are supreme for us so we dont let any customers go unsatisfied.
+                  Customers are supreme for us so we dont let any customers go
+                  unsatisfied.
                 </p>
               </div>
             </div>

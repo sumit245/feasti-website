@@ -11,9 +11,7 @@ export default function BannerCarousel() {
     <div className="row my-5">
       <div className="col-sm-9">
         <h1 className="gradient-text mx-5">Homemade Food</h1>
-        <h4 className="mx-5">
-          Subscription based meal ordering platform.
-        </h4>
+        <h4 className="mx-5">Subscription based meal ordering platform.</h4>
         <p
           className="mx-5 my-5"
           style={{ letterSpacing: 1, lineHeight: 1.4, width: '80%' }}
@@ -92,6 +90,7 @@ export default function BannerCarousel() {
           src={Img1}
           style={{ height: 640, width: 'auto' }}
           alt="background"
+          loading="lazy"
         />
       </div>
     </div>

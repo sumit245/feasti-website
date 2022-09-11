@@ -2,7 +2,6 @@ import React from 'react';
 import {
   GiBowlOfRice,
   GiTakeMyMoney,
-  GiCampCookingPot,
   GiOpenedFoodCan,
   GiEarthAmerica,
   GiShakingHands,

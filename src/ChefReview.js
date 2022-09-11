@@ -112,6 +112,7 @@ export default function ChefReview() {
                   width: 300,
                   marginLeft: '12%',
                 }}
+                loading="lazy"
                 alt="chef-1"
               />
             </div>
@@ -124,6 +125,7 @@ export default function ChefReview() {
                 <img
                   src={Quotation}
                   alt="chef-1"
+                  loading="lazy"
                   style={{ height: 20, width: 20 }}
                 />
                 &nbsp;&nbsp; {restaurant[0].city}, {restaurant[0].state} |
@@ -141,7 +143,7 @@ export default function ChefReview() {
                   proud to be associated with Feasti as a chef.
                 </p>
                 <strong className="text-black">
-                   Chef {restaurant[0].owner_name}
+                  Chef {restaurant[0].owner_name}
                 </strong>
               </div>
             </div>
@@ -153,6 +155,7 @@ export default function ChefReview() {
                 <img
                   src={Quotation}
                   alt="chef-1"
+                  loading="lazy"
                   style={{ height: 20, width: 20 }}
                 />
                 &nbsp;&nbsp; {restaurant[1].city}, {restaurant[1].state} |
@@ -170,7 +173,7 @@ export default function ChefReview() {
                   kitchen, constantly communicating with me and giving feedback.
                 </p>
                 <strong className="text-black">
-                   Chef {restaurant[1].owner_name}
+                  Chef {restaurant[1].owner_name}
                 </strong>
               </div>
             </div>

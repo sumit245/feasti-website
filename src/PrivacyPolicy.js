@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { Page, Document, pdfjs } from "react-pdf";
-
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import Footer from "./Footer";
-import Header from "./Header";
+import React, { useState, useEffect } from 'react';
+import { Page, Document, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import Footer from './Footer';
+import Header from './Header';
 
 const options = {
-  cMapUrl: "cmaps/",
+  cMapUrl: 'cmaps/',
   cMapPacked: true,
-  standardFontDataUrl: "standard_fonts/",
+  standardFontDataUrl: 'standard_fonts/',
 };
 
 export default function PrivacyPoilcy() {
-  const [file, setFile] = useState("./pp.pdf");
+  const [file, setFile] = useState('./pp.pdf');
   const [numPages, setNumPages] = useState(null);
   useEffect(() => {
     let componentMount = true;
@@ -37,7 +36,12 @@ export default function PrivacyPoilcy() {
           className="container-lg"
         >
           {Array.from(new Array(numPages), (el, index) => (
-            <Page key={`page_${index + 1}`} pageNumber={index + 1} size="A4" scale={4} />
+            <Page
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+              size="A4"
+              scale={4}
+            />
           ))}
         </Document>
       </div>

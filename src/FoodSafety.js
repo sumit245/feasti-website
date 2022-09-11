@@ -15,6 +15,7 @@ export default function FoodSafety() {
                   src={Safety}
                   className="icon-center my-2"
                   alt="food-safety-training"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -37,6 +38,7 @@ export default function FoodSafety() {
                   src={Trust}
                   alt="food-safety-instrument"
                   className="icon-center my-2"
+                  loading="lazy"
                 />
               </div>
             </div>

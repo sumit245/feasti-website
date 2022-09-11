@@ -36,6 +36,7 @@ export default function HowItWorks() {
               className="border rounded-circle"
               style={{ height: 240, width: 240 }}
               alt=""
+              loading="lazy"
             />
           </div>
         </div>
@@ -46,6 +47,7 @@ export default function HowItWorks() {
               className="border rounded-circle"
               style={{ height: 240, width: 240, marginLeft: 276 }}
               alt=""
+              loading="lazy"
             />
           </div>
           <div className="col-sm-8">
@@ -90,6 +92,7 @@ export default function HowItWorks() {
               className="border rounded-circle"
               style={{ height: 240, width: 240 }}
               alt=""
+              loading="lazy"
             />
           </div>
         </div>

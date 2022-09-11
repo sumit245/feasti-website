@@ -1,35 +1,51 @@
-import Header from './Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BannerCarousel from './ControlledCarousel';
-import HowItWorks from './HowItWorks';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './Header';
+import BannerCarousel from './ControlledCarousel';
 import Becomeachef from './Becomeachef';
+import HowItWorks from './HowItWorks';
 import Register from './Register';
 import Footer from './Footer';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsofService from './TermsofService';
-import Values from './home/Values';
-import Featured from './home/Featured';
-import MeettheChef from './home/MeettheChef';
-import Testimonials from './home/testimonials';
 import Contacts from './Contacts';
 import HeaderTop from './home/HeaderTop';
 import HomeSafety from './home/HomeSafety';
+import AdminCoupon from './home/AdminCoupon';
+import Values from './home/Values';
+import Featured from './home/Featured';
+import MeettheChef from './home/MeettheChef';
 
 function Home() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    let componentMounted = true;
+    if (componentMounted) {
+      setShow(true);
+    }
+    return () => {
+      componentMounted = false;
+    };
+  }, []);
+  const handleClose = (state) => setShow(state);
   return (
     <div style={{ width: '100%' }}>
-      <HeaderTop />
-      <Header />
-      <BannerCarousel />
-      <HowItWorks />
-      <Values />
-      <MeettheChef />
-      <Featured />
-      <HomeSafety/>
-      {/* <Testimonials /> */}
-      <Footer />
+      {show ? (
+        <AdminCoupon visible={show} closer={handleClose} />
+      ) : (
+        <>
+          <HeaderTop />
+          <Header />
+          <BannerCarousel />
+          <HowItWorks />
+          <Values />
+          <MeettheChef />
+          <Featured />
+          <HomeSafety />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

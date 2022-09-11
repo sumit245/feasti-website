@@ -20,8 +20,9 @@ export default function Help() {
                 <div className="icon-bg">
                   <img
                     src={Chat}
-                    alt="cht-with-us"
+                    alt="chat-with-us"
                     className="icon-center my-2"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -40,7 +41,12 @@ export default function Help() {
             <div className="d-flex justify-content-between align-items-start">
               <div className="flex-grow-1">
                 <div className="icon-bg">
-                  <img src={Food} alt="passion" className="icon-center my-2" />
+                  <img
+                    src={Food}
+                    alt="passion"
+                    className="icon-center my-2"
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <div>
@@ -65,13 +71,12 @@ export default function Help() {
                     src={Store}
                     alt="shop-online"
                     className="icon-center my-2"
+                    loading="lazy"
                   />
                 </div>
               </div>
               <div>
-                <h6 className="text-dark fw-bold">
-                  Craft your menu
-                </h6>
+                <h6 className="text-dark fw-bold">Craft your menu</h6>
                 <span className="text-justify">
                   Our team has expert photographers on staff to help you take
                   beautiful photos of your dishes.
@@ -86,13 +91,16 @@ export default function Help() {
             <div className="d-flex justify-content-between align-items-start">
               <div className="flex-grow-1">
                 <div className="icon-bg">
-                  <img src={Bulb} alt="idea" className="icon-center my-2" />
+                  <img
+                    src={Bulb}
+                    alt="idea"
+                    className="icon-center my-2"
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <div>
-                <h6 className="text-dark fw-bold">
-                  Get advice
-                </h6>
+                <h6 className="text-dark fw-bold">Get advice</h6>
                 <span className="text-justify">
                   Any-time access to our extensive knowledgebase, full of
                   helpful articles and video tutorials on how to grow your home

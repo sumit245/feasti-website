@@ -13,47 +13,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px; /* roundness of the scroll thumb */
 }
 
-@font-face {
-  font-family: chocolate_bar;
-  src: url('./assets/fonts/Chocolate Bar Demo.otf');
-}
-@font-face {
-  font-family: kgsketch;
-  src: url('./assets/fonts/KGBlankSpaceSketch.ttf');
-}
-@font-face {
-  font-family: hotpizza;
-  src: url('./assets/fonts/hotpizza.ttf');
-}
-@font-face {
-  font-family: semanko;
-  src: url('./assets/fonts/SEMANKO-PersonalUse.otf');
-}
-@font-face {
-  font-family: veggy;
-  src: url('./assets/fonts/veggy.ttf');
-}
-.App-logo {
-  font-family: hotpizza;
-  text-align: center;
-  font-size: 128;
-  font-weight: bolder;
-  padding-left: 2px;
-  background: #ff9900;
-  background: -webkit-linear-gradient(to right, #ff9900 0%, #cf1512 100%);
-  background: -moz-linear-gradient(to right, #ff9900 0%, #cf1512 100%);
-  background: linear-gradient(to right, #ff9900 0%, #cf1512 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 3px;
-}
-
-.carousel-content {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  z-index: 20;
-}
 .carousel-form {
   background: rgba(9, 9, 9, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -373,19 +332,19 @@ li {
 .stepper-item:last-child::after {
   content: none;
 }
-.step-description{
+.step-description {
   font-size: 0.8rem;
   text-align: center;
   margin-left: 2%;
   margin-right: 2%;
 }
-.highlighted{
+.highlighted {
   border-radius: 20px;
   border: #feaa1a solid 2px;
   cursor: pointer;
 }
-.icon-bg{
-  width:80px;
+.icon-bg {
+  width: 80px;
   height: 80px;
   border-radius: 50%;
   display: flex;
@@ -394,8 +353,53 @@ li {
   margin-right: 8px;
 }
 
-.icon-center{
+.icon-center {
   text-align: center;
   height: 50px;
   width: 50px;
+}
+
+.coupon {
+  align-self: center;
+  width: 60%;
+  padding: 0.5rem;
+  border-radius: 15px; /* Rounded border */
+}
+.discount {
+  display: inline-block;
+}
+.discount-text {
+  font-size: 6rem;
+  display: inline;
+  color: #ff6600;
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.discount-text::after {
+  content: '%';
+  display: inline;
+  font-weight: 10;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.discount-off {
+  display: inline;
+  color: #ff6600;
+}
+.coupon-text {
+  display: inline;
+}
+.coupon-code {
+  display: inline;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.close-btn {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-color: #fff;
 }

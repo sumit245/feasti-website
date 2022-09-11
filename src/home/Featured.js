@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Img2 from '../assets/home_screen_user.png';
 import Img1 from '../assets/login_screen_user.png';
 import Img3 from '../assets/result_details.png';
@@ -33,9 +33,8 @@ export default function Featured() {
         ? sethighlighted(selector)
         : selector === 5
         ? sethighlighted(selector)
-        : sethighlighted(selector)
+        : sethighlighted(selector);
     setImage(select);
-    
   };
 
   return (
