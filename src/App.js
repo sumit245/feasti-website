@@ -38,12 +38,12 @@ function Home() {
           <HeaderTop />
           <Header />
           <BannerCarousel />
-          <HowItWorks />
-          <Values />
-          <MeettheChef />
-          <Featured />
-          <HomeSafety />
-          <Footer />
+          {/* <HowItWorks /> */}
+          {/* <Values /> */}
+          {/* <MeettheChef /> */}
+          {/* <Featured /> */}
+          {/* <HomeSafety /> */}
+          {/* <Footer /> */}
         </div>
       )}
     </div>

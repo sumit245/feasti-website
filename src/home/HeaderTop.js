@@ -20,7 +20,7 @@ export default function HeaderTop() {
 
   return (
     <div className="text-center pt-0 headertop">
-      <span className="py-0">Get {discount} Discount on next order</span>
+      <span className="py-0">Get {discount}% Discount on next order</span>
     </div>
   );
 }

@@ -36,16 +36,16 @@ export default function AdminCoupon({ visible, closer }) {
             <h1 className="discount-text">15</h1>
             <h1 className="discount-off">OFF</h1>
           </div>
-          </div>
-          <div className="row">
-            <p style={{flexWrap:'wrap',width:"100%"}}>Enjoy {discount}% off on your next order</p>
-          </div>
-          {/* <p> */}
-          <h2 className="coupon-text">Use coupon code</h2>
-          <h2 className="coupon-code"> {promo_code}</h2>
-          {/* </p> */}
-          <p>* Terms and Conditions applied</p>
-        
+        </div>
+        <div className="text-center">
+          <p >Enjoy {discount}% off on your next order</p>
+        </div>
+
+        <div className='row align-items-center justify-content-center'>
+          <h3 className='coupon-text col-8 px-0'>Use coupon code</h3>
+          <h3 className="coupon-code col-4 px-0">{promo_code}</h3>
+        </div>
+        <p className='text-small'>* Terms and Conditions applied</p>
       </Modal.Body>
     </Modal>
   );

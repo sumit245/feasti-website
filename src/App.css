@@ -44,6 +44,11 @@ body::-webkit-scrollbar-thumb {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media only screen and (max-width: 600px) {
+  .gradient-text {
+    font-size: 2.5rem;
+  }
+}
 
 .btn-danger {
   background: linear-gradient(to bottom right, #ff9900 1%, #ff6600 100%);
@@ -361,7 +366,6 @@ li {
 
 .coupon {
   align-self: center;
-  width: 60%;
   padding: 0.5rem;
   border-radius: 15px; /* Rounded border */
 }
@@ -387,12 +391,27 @@ li {
   color: #ff6600;
 }
 .coupon-text {
-  display: inline;
+  font-size: 2.5vw;
+}
+@media only screen and (max-width: 600px) {
+  .coupon-text {
+    font-size: 5vw;
+    text-align: left;
+    margin-left: -1.8vw;
+  }
 }
 .coupon-code {
-  display: inline;
+  font-size: 2.8vw;
+  margin-left: -0.6vw;
   font-weight: bold;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 600px) {
+  .coupon-code {
+    text-align: left;
+    font-size: 6vw;
+    margin-left: -6.8vw;
+  }
 }
 .close-btn {
   position: absolute;
