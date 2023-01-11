@@ -43,7 +43,7 @@ function Home() {
           {/* <MeettheChef /> */}
           {/* <Featured /> */}
           {/* <HomeSafety /> */}
-          {/* <Footer /> */}
+          <Footer />
         </div>
       )}
     </div>

@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
             <div className="col-sm-8 pl-0">
               <div className="row align-items-center">
-                <div className="col-sm-6">
+                <div className="col-6">
                   <span
                     className="text-white text-center my-4 mx-1"
                     style={{
@@ -54,7 +54,7 @@ export default function Footer() {
                     linkProps={{ title: 'Coming Soon' }}
                   />
                 </div>
-                <div className="col-sm-6">
+                <div className="col-6">
                   <span
                     className="text-white text-center my-4 mx-1"
                     style={{
@@ -161,37 +161,33 @@ export default function Footer() {
       </div>
 
       <div className="row py-0 mx-0">
-        <div className=" col-sm-8">
-          <span className="text-white text-small" style={{ fontSize: 12 }}>
+        <div className="col-sm-8 col-xs-12">
+          <span className="text-white footer-bottom-text">
             © Feasti, Inc. 2022. All Rights Reserved.
           </span>
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-4 col-xs-12">
           <a
             href="/contacts"
-            className="text-white text-decoration-none mx-2"
-            style={{ fontSize: 12 }}
+            className="text-white text-decoration-none footer-bottom-text"
           >
             Contact us
           </a>
           <a
             href="/privacy-policy"
-            className="text-white text-decoration-none mx-2"
-            style={{ fontSize: 12 }}
+            className="text-white text-decoration-none footer-bottom-text"
           >
             Privacy Policy
           </a>
           <a
             href="/terms-of-service"
-            className="text-white text-decoration-none mx-2"
-            style={{ fontSize: 12 }}
+            className="text-white text-decoration-none footer-bottom-text"
           >
             Terms of Service
           </a>
           <a
             href="/become-chef/register"
-            className="text-white text-decoration-none mx-2"
-            style={{ fontSize: 12 }}
+            className="text-white text-decoration-none footer-bottom-text"
           >
             Join Feasti
           </a>
