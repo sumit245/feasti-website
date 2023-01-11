@@ -4,8 +4,9 @@ import './App.css';
 import MobileStoreButton from 'react-mobile-store-button/lib/MobileStoreButton';
 
 export default function BannerCarousel() {
-  const iOSUrl =
-    'https://itunes.apple.com/us/app/';
+  const iOSChefUrl =
+    "https://apps.apple.com/us/app/feasti-chef/id6443444359";
+  const iOSUrl = "https://apps.apple.com/us/app/feasti-homecooked-food/id1645705596"
   const androidUrl = 'https://play.google.com/store/apps';
   return (
     <div className="row my-5">
@@ -69,7 +70,7 @@ export default function BannerCarousel() {
                 store="ios"
                 height={60}
                 width={166}
-                url={iOSUrl}
+                url={iOSChefUrl}
                 linkProps={{ title: 'Coming Soon' }}
               />
             </div>

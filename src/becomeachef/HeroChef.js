@@ -2,8 +2,9 @@ import React from 'react';
 import MobileStoreButton from 'react-mobile-store-button/lib/MobileStoreButton';
 import Img1 from '../assets/chef_dashboard.png';
 export default function HeroChef() {
-  const iOSUrl =
-    'https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8';
+  const iOSChefUrl =
+    "https://apps.apple.com/us/app/feasti-chef/id6443444359";
+  const iOSUrl = "https://apps.apple.com/us/app/feasti-homecooked-food/id1645705596"
   const androidUrl =
     'https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8';
   return (
@@ -67,7 +68,7 @@ export default function HeroChef() {
                 store="ios"
                 height={60}
                 width={166}
-                url={iOSUrl}
+                url={iOSChefUrl}
                 linkProps={{ title: 'Download Feasti' }}
               />
             </div>

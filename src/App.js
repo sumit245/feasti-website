@@ -34,7 +34,7 @@ function Home() {
       {show ? (
         <AdminCoupon visible={show} closer={handleClose} />
       ) : (
-        <>
+        <div>
           <HeaderTop />
           <Header />
           <BannerCarousel />
@@ -44,7 +44,7 @@ function Home() {
           <Featured />
           <HomeSafety />
           <Footer />
-        </>
+        </div>
       )}
     </div>
   );
