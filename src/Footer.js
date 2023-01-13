@@ -17,16 +17,17 @@ export default function Footer() {
     <footer className="bg-grad">
       <div className="row align-items-center bg-dark py-4 mx-0">
         <div className="col-sm-9">
-          <div className="row align-items-center">
-            <div className="col-sm-4">
-              <h4
-                className="text-white text-right"
-                style={{ marginLeft: '10%' }}
-              >
-                Download the app
-              </h4>
+          <div className="row mx-2 my-2">
+            <div className="col-12">
+              <h5 className="text-white text-justify footer-title">
+                Every meal is an opportunity
+              </h5>
+              <p className="text-white text-justify">Feasti is rethinking an entire food delivery industry to provide a more inclusive and
+                fair option to connect talented cooks with customers.</p>
             </div>
-            <div className="col-sm-8 pl-0">
+          </div>
+          <div className="row align-items-center mx-2">
+            <div className="col-12 pl-0">
               <div className="row align-items-center">
                 <div className="col-6">
                   <span
@@ -35,7 +36,7 @@ export default function Footer() {
                       fontSize: 18,
                     }}
                   >
-                    Customer App
+                    Customer
                   </span>
                   <MobileStoreButton
                     store="ios"
@@ -61,7 +62,7 @@ export default function Footer() {
                       fontSize: 18
                     }}
                   >
-                    Chef App
+                    Chef
                   </span>
                   <MobileStoreButton
                     store="ios"
@@ -83,80 +84,81 @@ export default function Footer() {
               </div>
             </div>
           </div>
+
         </div>
         <div className="col-sm-3">
-
-          <a
-            href="https://www.facebook.com/feasti"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white-50 text-decoration-none mx-2"
-          >
-            <img
-              src={Facebook}
-              height={30}
-              width={30}
-              alt="instagram"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="https://instagram.com/feastiofficial?igshid=YmMyMTA2M2Y="
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white-50 text-decoration-none mx-2"
-          >
-            <img
-              src={Instagram}
-              height={30}
-              width={30}
-              alt="instagram"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/feasti"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white-50 text-decoration-none mx-2"
-          >
-            <img
-              src={LinkedIn}
-              height={30}
-              width={30}
-              alt="instagram"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="https://www.twitter.com/Feastiofficial"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white-50 text-decoration-none mx-2"
-          >
-            <img
-              src={Twitter}
-              height={22}
-              width={22}
-              alt="instagram"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="https://www.tiktok.com/@feastiofficial?_t=8WfdMcTi0t4&r=1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white-50 text-decoration-none mx-2"
-          >
-            <img
-              src={Tiktok}
-              height={22}
-              width={22}
-              alt="instagram"
-              loading="lazy"
-            />
-          </a>
-
+          <div className="icon-container">
+            <a
+              href="https://www.facebook.com/feasti"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white-50 text-decoration-none mx-2"
+            >
+              <img
+                src={Facebook}
+                height={30}
+                width={30}
+                alt="instagram"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://instagram.com/feastiofficial?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white-50 text-decoration-none mx-2"
+            >
+              <img
+                src={Instagram}
+                height={30}
+                width={30}
+                alt="instagram"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/feasti"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white-50 text-decoration-none mx-2"
+            >
+              <img
+                src={LinkedIn}
+                height={30}
+                width={30}
+                alt="instagram"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.twitter.com/Feastiofficial"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white-50 text-decoration-none mx-2"
+            >
+              <img
+                src={Twitter}
+                height={22}
+                width={22}
+                alt="instagram"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com/@feastiofficial?_t=8WfdMcTi0t4&r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white-50 text-decoration-none mx-2"
+            >
+              <img
+                src={Tiktok}
+                height={22}
+                width={22}
+                alt="instagram"
+                loading="lazy"
+              />
+            </a>
+          </div>
         </div>
       </div>
 

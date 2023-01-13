@@ -1,3 +1,13 @@
+
+
+/* @font-face {
+  font-family: baskerville;
+  src: url(./assets/fonts/Baskerville.ttf);
+} */
+@font-face {
+  font-family: playFair;
+  src: url('./assets/fonts/PlayfairDisplay-Black.ttf');
+}
 body::-webkit-scrollbar {
   width: 4px; /* width of the entire scrollbar */
 }
@@ -399,9 +409,33 @@ li {
 @media only screen and (max-width: 600px) {
   footer,
   .bg-grad {
-    background-color: #282c34;
-    background: #282c34;
+    background: #212529;
+    margin-left: 0px;
+    margin-right: 0px;
   }
+  footer > .bg-dark {
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+}
+
+@media only screen and (min-width: 610px) {
+  footer,
+  .bg-grad {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+}
+footer,
+.bg-grad {
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+footer > .bg-dark {
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 .close-btn {
   position: absolute;
@@ -429,4 +463,16 @@ li {
     margin-left: 0vw;
     margin-right: 0vw;
   }
+}
+@media only screen and(max-width:600px) {
+  .icon-container {
+    /* visibility: hidden; */
+    display: none;
+  }
+}
+
+.footer-title {
+  font-family: playFair;
+  letter-spacing: 0.092rem;
+  font-size: medium;
 }
