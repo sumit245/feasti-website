@@ -13,7 +13,6 @@ export default function HowItWorks() {
         <div className="col-sm-12 col-lg-8 text-center">
           <img
             src={Explore}
-            className="border"
             style={{ height: 220, width: 220 }}
             alt="explore some foods"
             loading="lazy"
@@ -27,7 +26,6 @@ export default function HowItWorks() {
         <div className="col-sm-12 col-lg-4 text-center">
           <img
             src={Cooking}
-            className="border"
             style={{ height: 220, width: 220 }}
             alt="cooking foods"
             loading="lazy"
@@ -41,7 +39,6 @@ export default function HowItWorks() {
         <div className="col-sm-12 col-lg-4 text-center">
           <img
             src={FoodDelivery}
-            className="border"
             style={{ height: 240, width: 240 }}
             alt="Deliver Food"
             loading="lazy"
