@@ -40,7 +40,7 @@ function Home() {
           <BannerCarousel />
           <HowItWorks />
           <Values />
-          <MeettheChef />
+          {/* <MeettheChef /> */}
           {/* <Featured />
           <HomeSafety /> */}
           <Footer />

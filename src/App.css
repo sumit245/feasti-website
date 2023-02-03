@@ -498,7 +498,8 @@ footer > .bg-dark {
   background-size: contain;
   width: calc(100%-12px);
   max-width: 600px;
-  max-height: 700px;
+  max-height: 600px;
+  margin-right: 0;
   margin: 12px;
   border-radius: 20px;
   overflow: hidden;
@@ -508,6 +509,8 @@ footer > .bg-dark {
 .slides {
   display: flex;
   overflow: hidden;
+  max-width: fit-content;
+  margin-right: 0;
   height: 700px;
   position: relative;
 }
@@ -554,4 +557,7 @@ footer > .bg-dark {
   height: auto;
   max-width: 60vw;
   max-height: 100vw;
+}
+h4{
+  font-family: Arial, Helvetica, sans-serif;;
 }
