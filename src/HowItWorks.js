@@ -1,6 +1,6 @@
 import React from 'react';
 import Cooking from './assets/cooking.gif';
-import FoodDelivery from './assets/fooddelivery.gif';
+import FoodDelivery from './assets/enjoy.png';
 import Explore from './assets/explore_food.png';
 
 export default function HowItWorks() {
