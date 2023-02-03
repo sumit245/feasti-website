@@ -10,6 +10,10 @@ body::-webkit-scrollbar {
   width: 4px; /* width of the entire scrollbar */
 }
 
+* {
+  font-family: satoshi;
+}
+
 body::-webkit-scrollbar-thumb {
   width: 2px;
   background: linear-gradient(to bottom right, #ff9900 0%, #cf1512 100%);
@@ -489,60 +493,40 @@ footer > .bg-dark {
   font-size: medium;
 }
 
-.hero-container {
-  background: linear-gradient(
-    149deg,
-    rgb(247, 0, 255) 0%,
-    rgb(255, 145, 0) 100%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-}
-
 .slider {
-  width: 100%;
+  background: url('./assets/image_bg.png') no-repeat;
+  background-size: contain;
+  width: calc(100%-12px);
   max-width: 600px;
-  height: 400px;
-  margin-top: 20px;
-  border-radius: 20px 20px 0 0;
+  max-height: 700px;
+  margin: 12px;
+  border-radius: 20px;
   overflow: hidden;
   position: relative;
 }
 
 .slides {
   display: flex;
-  overflow-x: scroll;
-  height: 400px;
+  overflow: hidden;
+  height: 700px;
   position: relative;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-.slide:nth-of-type(even) {
-  background-color: rgb(250, 246, 212);
 }
 
 .slide {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 40px;
+  padding: 10px 0px 20px 20px;
   flex-shrink: 0;
   width: 100%;
-  height: 400px;
-  scroll-snap-align: center;
-  box-sizing: border-box;
-  background: white;
-  transform-origin: center center;
-  transform: scale(1);
+  height: 460px;
 }
 
 .slide__text {
-  padding: 40px;
-  font-size: 40px;
+  font-size: 1.4rem;
   font-weight: bold;
   font-family: sans-serif;
+  color: #fff;
 }
 .app-store-link {
   background: url('https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg');
@@ -551,7 +535,7 @@ footer > .bg-dark {
   display: inline-block;
   overflow: hidden;
   text-decoration: none;
-  height: 40px;
+  height: 32px;
   width: 100%;
   padding: 5px;
 }
@@ -560,83 +544,14 @@ footer > .bg-dark {
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  overflow: hidden;
   text-decoration: none;
   height: 60px;
   width: 100%;
-  padding: 5px;
 }
 .hero-img {
-  margin-left: 10%;
-  width: 240px;
-  height: 600px;
-  z-index: 1000;
-}
-/* .slide a {
-  background: none;
-  border: none;
-} */
-
-/* a.slide__prev,
-.slider::before {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  left: 5%;
-}
-
-a.slide__next,
-.slider::after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  right: 5%;
-} */
-
-/* .slider::before,
-.slider::after,
-.slide__prev,
-.slide__next {
-  position: absolute;
-  top: 48%;
-  width: 35px;
-  height: 35px;
-  border: solid black;
-  border-width: 0 4px 4px 0;
-  padding: 3px;
-  box-sizing: border-box;
-}
-
-.slider::before,
-.slider::after {
-  content: '';
-  z-index: 1;
-  background: none;
-  pointer-events: none;
-}
-
-.slider__nav {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
-  text-align: center;
-}
-
-.slider__navlink {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: black;
-  margin: 0 10px 0 10px;
-} */
-
-@keyframes slide {
-  from {
-    background-color: #cf1512;
-  }
-  to {
-    background-color: #ff6600;
-  }
+  margin-left: 20%;
+  width: auto;
+  height: auto;
+  max-width: 60vw;
+  max-height: 100vw;
 }
