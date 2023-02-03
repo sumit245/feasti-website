@@ -20,9 +20,6 @@ export default function HowItWorks() {
                 watering meal with you. Discover homemade meals near you. All of
                 our HomeCooks are carefully vetted & food safety certified.
               </p>
-              <button className="btn btn-primary" style={{ marginLeft: "2rem" }}>
-                Explore
-              </button>
           </div>
           <div className="col-sm-12 col-lg-4 text-center">
             <img

@@ -39,9 +39,9 @@ function Home() {
           <Header />
           <BannerCarousel />
           <HowItWorks />
-          {/* <Values />
+          <Values />
           <MeettheChef />
-          <Featured />
+          {/* <Featured />
           <HomeSafety /> */}
           <Footer />
         </div>

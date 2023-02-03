@@ -14,16 +14,16 @@ export default function Header() {
         href="/become-chef"
         className="btn btn-danger float-right"
         style={{
-          borderRadius: 12,
+          borderRadius: 6,
           marginRight: 2,
           height: 28,
           width: 100,
-          padding:0
-          // fontSize: 12,
-          
+          padding: 0,
+          textTransform: 'uppercase'
+
         }}
       >
-        Be a chef
+        join us
       </a>
     </nav>
   );

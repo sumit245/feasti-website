@@ -43,7 +43,7 @@ export default function MeettheChef() {
       <div className="container">
         <div className="row mx-5 my-4">
           {restaurant.map((data, key) => (
-            <div className="col-sm-4" key={key}>
+            <div className="col-sm-4 my-2" key={key}>
               <div className="card">
                 <div className="row">
                   <img
@@ -59,7 +59,7 @@ export default function MeettheChef() {
                   />
                 </div>
                 <div className="row align-items-start my-2 mx-1">
-                  <div className="col-sm-2">
+                  <div className="col-2">
                     <img
                       className="border rounded-circle"
                       alt="profile"
@@ -68,7 +68,7 @@ export default function MeettheChef() {
                       loading="lazy"
                     />
                   </div>
-                  <div className="col-sm-10">
+                  <div className="col-10">
                     <div className="row">
                       <div className="col-sm-10 text-wrapper">
                         <h6 className="my-0 py-0">
