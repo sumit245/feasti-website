@@ -20,9 +20,9 @@ export default function Values() {
         >
           your home cooked foods made by local chefs
         </h3>
-        <div className="row my-5">
-          <div className="col-lg-4 mt-5">
-            <div className="row my-4">
+        <div className="row my-2">
+          <div className="col-lg-4 mt-1">
+            <div className="row">
               <div className="col-lg-4 text-center">
                 <GiBowlOfRice size={64} className="gradient-text" />
               </div>
@@ -35,8 +35,8 @@ export default function Values() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 mt-5">
-            <div className="row my-4">
+          <div className="col-lg-4 mt-1">
+            <div className="row">
               <div className="col-lg-4 text-center">
                 <GiTakeMyMoney size={64} className="gradient-text" />
               </div>
@@ -48,8 +48,8 @@ export default function Values() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 mt-5">
-            <div className="row my-4">
+          <div className="col-lg-4 mt-1">
+            <div className="row">
               <div className="col-lg-4 text-center">
                 <MdDeliveryDining size={64} className="gradient-text" />
               </div>
@@ -62,9 +62,9 @@ export default function Values() {
             </div>
           </div>
         </div>
-        <div className="row my-5">
-          <div className="col-lg-4 mt-5">
-            <div className="row my-4">
+        <div className="row my-2">
+          <div className="col-lg-4 mt-1">
+            <div className="row">
               <div className="col-lg-4 text-center">
                 <GiShakingHands size={64} className="gradient-text" />
               </div>
@@ -76,8 +76,8 @@ export default function Values() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 mt-5">
-            <div className="row my-4">
+          <div className="col-lg-4 mt-1">
+            <div className="row">
               <div className="col-lg-4 text-center">
                 <GiOpenedFoodCan size={64} className="gradient-text" />
               </div>
@@ -90,8 +90,8 @@ export default function Values() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 mt-5">
-            <div className="row my-4">
+          <div className="col-lg-4 mt-1">
+            <div className="row">
               <div className="col-lg-4 text-center">
                 <GiEarthAmerica size={64} className="gradient-text" />
               </div>
