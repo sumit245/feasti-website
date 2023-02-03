@@ -3,23 +3,27 @@ import Logo from "./assets/logo_feasti1.png"
 export default function Header() {
   return (
     <nav className="navbar navbar-light mt-n2 py-0">
-      <a href="/" className="navbar-brand" style={{ fontWeight: 'bold' }}>
-        <img
-          src={Logo}
-          width={48}
-          height={48}
-          className="d-inline-block align-center"
-          alt=""
-          loading="lazy"
-        />
-        Feasti
-      </a>
+      <img
+        src={Logo}
+        width={48}
+        height={48}
+        alt=""
+        loading="lazy"
+      />
       <a
         href="/become-chef"
-        className="btn btn-danger float-right mx-2"
-        style={{ borderRadius: 40 }}
+        className="btn btn-danger float-right"
+        style={{
+          borderRadius: 12,
+          marginRight: 2,
+          height: 28,
+          width: 100,
+          padding:0
+          // fontSize: 12,
+          
+        }}
       >
-        Become a chef
+        Be a chef
       </a>
     </nav>
   );

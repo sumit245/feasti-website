@@ -38,11 +38,11 @@ function Home() {
           <HeaderTop />
           <Header />
           <BannerCarousel />
-          {/* <HowItWorks /> */}
-          {/* <Values /> */}
-          {/* <MeettheChef /> */}
-          {/* <Featured /> */}
-          {/* <HomeSafety /> */}
+          <HowItWorks />
+          {/* <Values />
+          <MeettheChef />
+          <Featured />
+          <HomeSafety /> */}
           <Footer />
         </div>
       )}
