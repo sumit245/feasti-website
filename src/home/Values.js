@@ -24,7 +24,8 @@ export default function Values() {
           <div className="col-lg-4 mt-1">
             <div className="row">
               <div className="col-lg-4 text-center">
-                <GiBowlOfRice size={64} className="gradient-text" />
+                <img src={require('../assets/eat_explore_enjoy.gif')} height={64} width={64} />
+                
               </div>
               <div className="col-lg-8 text-center">
                 <p>
@@ -38,7 +39,7 @@ export default function Values() {
           <div className="col-lg-4 mt-1">
             <div className="row">
               <div className="col-lg-4 text-center">
-                <GiTakeMyMoney size={64} className="gradient-text" />
+                <img src={require('../assets/spend-less.gif')} height={64} width={64} />
               </div>
               <div className="col-lg-8 text-center">
                 <p>
@@ -51,7 +52,7 @@ export default function Values() {
           <div className="col-lg-4 mt-1">
             <div className="row">
               <div className="col-lg-4 text-center">
-                <MdDeliveryDining size={64} className="gradient-text" />
+                <img src={require('../assets/fooddelivery.gif')} height={64} width={64} />
               </div>
               <div className="col-lg-8 text-center">
                 <p>
@@ -66,7 +67,7 @@ export default function Values() {
           <div className="col-lg-4 mt-1">
             <div className="row">
               <div className="col-lg-4 text-center">
-                <GiShakingHands size={64} className="gradient-text" />
+                <img src={require('../assets/connect.gif')} height={64} width={64} />
               </div>
               <div className="col-lg-8 text-center">
                 <p>
