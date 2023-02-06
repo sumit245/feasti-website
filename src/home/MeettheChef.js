@@ -32,7 +32,9 @@ export default function MeettheChef() {
 
   const fetchRestaurant = async () => {
     setLoaded(true)
-    const response = await axios.get('https://feasti.com/api/newrest');
+    const response = await axios.get('https://feasti.com/api/newrest',{
+      headers: { "Access-Control-Allow-Origin": "*" }
+    });
     const data = response.data;
     let rest = shuffle(data);
     rest.length = 3;
