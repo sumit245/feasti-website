@@ -45,17 +45,16 @@ export default function MeettheChef() {
 
   const incrementSlide = () => {
     setIndex((index) => index + 1)
-    setActiveRestaurant(index+1)
-
+    setActiveRestaurant(restaurant[index])
   }
 
   const decrementSlide = () => {
     if (index >= 0) {
       setIndex((index) => index + 1)
-      setActiveRestaurant(index + 1)
+      setActiveRestaurant(restaurant[index])
     } else {
       setIndex(0)
-      setActiveRestaurant(0)
+      setActiveRestaurant(restaurant[0])
     }
   }
 
