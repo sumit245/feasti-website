@@ -9,7 +9,7 @@ export default function HomeSafety() {
         Our commitments to food safety
       </h4>
       <div className="my-4 mx-2">
-        <p className="text-center">
+        <p className="text-justify">
           {' '}
           We strive to provide you with fresh, homemade dishes that we would
           serve our families. Ensuring that our customers receive high-quality
@@ -32,10 +32,10 @@ export default function HomeSafety() {
             alt=""
           />
         </div>
-        <div className="col-lg-8 col-sm-12 text-center">
+        <div className="col-lg-8 col-sm-12">
           <div>
-            <h6 className="text-justify text-dark fw-bold">
-              1. Feasti home chef training and education
+            <h6 className="text-justify text-dark text-center fw-bold">
+              Feasti home chef training and education
             </h6>
             <p className="text-justify">
               At Feasti, we are committed to helping ensure that your food
@@ -54,10 +54,10 @@ export default function HomeSafety() {
             alt="chef cooking"
           />
         </div>
-        <div className="col-sm-12 col-lg-8 text-center ">
+        <div className="col-sm-12 col-lg-8">
           <div>
-            <h6 className="text-justify text-dark fw-bold">
-              2. Trusted by thousands of people
+            <h6 className="text-justify text-dark fw-bold text-center ">
+              Trusted by thousands of people
             </h6>
             <p className="text-justify">
               Feasti is used every day by thousands of customers around the

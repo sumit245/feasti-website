@@ -13,7 +13,7 @@ export default function Values() {
   return (
     <section className="my-4 py-5">
       <div className="container">
-        <p className="text-center">Feasti is specially designed for</p>
+        {/* <p className="text-center">Feasti is specially designed for</p> */}
         <h3
           className="text-center"
           style={{ textTransform: 'uppercase', fontSize: 20,fontWeight:'bold' }}

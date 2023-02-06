@@ -10,8 +10,9 @@ body::-webkit-scrollbar {
   width: 4px; /* width of the entire scrollbar */
 }
 
-* {
+p {
   font-family: satoshi;
+  line-height: 18px;
 }
 
 body::-webkit-scrollbar-thumb {
