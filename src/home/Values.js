@@ -24,7 +24,7 @@ export default function Values() {
           <div className="col-lg-4 mt-1">
             <div className="row">
               <div className="col-lg-4 text-center">
-                <img src={require('../assets/eat_explore_enjoy.gif')} height={64} width={64} />
+                <img src={require('../assets/eat_explore_enjoy.gif')} alt="enjoy your food" height={64} width={64} />
                 
               </div>
               <div className="col-lg-8 text-center">
@@ -39,7 +39,7 @@ export default function Values() {
           <div className="col-lg-4 mt-1">
             <div className="row">
               <div className="col-lg-4 text-center">
-                <img src={require('../assets/spend-less.gif')} height={64} width={64} />
+                <img src={require('../assets/spend-less.gif')} alt="Save more" height={64} width={64} />
               </div>
               <div className="col-lg-8 text-center">
                 <p>
@@ -52,7 +52,7 @@ export default function Values() {
           <div className="col-lg-4 mt-1">
             <div className="row">
               <div className="col-lg-4 text-center">
-                <img src={require('../assets/fooddelivery.gif')} height={64} width={64} />
+                <img src={require('../assets/fooddelivery.gif')} alt="Deliver food to home" height={64} width={64} />
               </div>
               <div className="col-lg-8 text-center">
                 <p>
@@ -67,7 +67,7 @@ export default function Values() {
           <div className="col-lg-4 mt-1">
             <div className="row">
               <div className="col-lg-4 text-center">
-                <img src={require('../assets/connect.gif')} height={64} width={64} />
+                <img src={require('../assets/connect.gif')} alt="connect to community" height={64} width={64} />
               </div>
               <div className="col-lg-8 text-center">
                 <p>

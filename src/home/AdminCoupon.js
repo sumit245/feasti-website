@@ -41,9 +41,9 @@ export default function AdminCoupon({ visible, closer }) {
           <p >Enjoy {discount}% off on your next order</p>
         </div>
 
-        <div className='row align-items-center justify-content-center'>
-          <h3 className='coupon-text col-8 px-0'>Use coupon code</h3>
-          <h3 className="coupon-code col-4 px-0">{promo_code}</h3>
+        <div className='d-flex align-items-center justify-content-center'>
+          <h3 className='coupon-text mx-1'>Use coupon code</h3>
+          <h3 className="coupon-code mx-1">{promo_code}</h3>
         </div>
         <p className='text-small'>* Terms and Conditions applied</p>
       </Modal.Body>

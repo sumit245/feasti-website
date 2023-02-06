@@ -12,7 +12,7 @@ export default function BannerCarousel() {
       <div className="slides">
         <div id='slides__1' className='slide'>
           <div>
-            <h1 className="slide__text text-white">Subscription based homemade meal plan</h1>
+            <h1 className="slide__text text-white" style={{maxWidth:"80%"}}>Subscription based homemade meal plan</h1>
             <span className="text-white">Order your meal from our app</span>
             <div className="d-inline-flex align-items-start justify-content-center my-2">
               <div style={{ height: 32, width: 128, padding: 0 }}>

@@ -16,12 +16,26 @@ import AdminCoupon from './home/AdminCoupon';
 import Values from './home/Values';
 import Featured from './home/Featured';
 import MeettheChef from './home/MeettheChef';
+import axios from 'axios';
 
 function Home() {
   const [show, setShow] = useState(false);
+  const [loaded, setLoaded] = useState(false)
+  const [restaurant,setRestaurant]=useState([])
+  const fetchRestaurant = async () => {
+    setLoaded(true)
+    const response = await axios.get('https://feasti.com/api/newrest');
+    const data = response.data;
+    console.log('====================================');
+    console.log(data);
+    setRestaurant(data);
+    setLoaded(false)
+  };
+
   useEffect(() => {
     let componentMounted = true;
     if (componentMounted) {
+      fetchRestaurant()
       setShow(true);
     }
     return () => {
@@ -40,7 +54,7 @@ function Home() {
           <BannerCarousel />
           <HowItWorks />
           <Values />
-          {/* <MeettheChef /> */}
+          <MeettheChef restaurant={restaurant} />
           {/* <Featured />
           <HomeSafety /> */}
           <Footer />
