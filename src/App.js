@@ -24,7 +24,9 @@ function Home() {
   const [restaurant,setRestaurant]=useState([])
   const fetchRestaurant = async () => {
     setLoaded(true)
-    const response = await axios.get('https://feasti.com/api/newrest');
+    const response = await axios.get('https://feasti.com/api/newrest', {
+      headers: { "Access-Control-Allow-Origin": "*" }
+    });
     const data = response.data;
     console.log('====================================');
     console.log(data);
@@ -55,8 +57,8 @@ function Home() {
           <HowItWorks />
           <Values />
           <MeettheChef restaurant={restaurant} />
-          {/* <Featured />
-          <HomeSafety /> */}
+          {/* <Featured /> */}
+          <HomeSafety />
           <Footer />
         </div>
       )}
