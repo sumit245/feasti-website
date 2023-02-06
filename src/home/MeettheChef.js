@@ -20,6 +20,7 @@ function shuffle(array) {
 
 export default function MeettheChef() {
   const [restaurant, setRestaurant] = useState([]);
+  const [index,setIndex]=useState(0)
   const [loaded, setLoaded] = useState(false)
   const [activeRestaurant, setActiveRestaurant] = useState({
     documents: [
@@ -36,16 +37,24 @@ export default function MeettheChef() {
     let rest = shuffle(data);
     rest.length = 3;
     setRestaurant(rest);
-    setActiveRestaurant(rest[0])
+    setActiveRestaurant(rest[index])
     setLoaded(false)
   };
 
   const incrementSlide = () => {
+    setIndex((index) => index + 1)
+    setActiveRestaurant(index+1)
 
   }
 
   const decrementSlide = () => {
-
+    if (index >= 0) {
+      setIndex((index) => index + 1)
+      setActiveRestaurant(index + 1)
+    } else {
+      setIndex(0)
+      setActiveRestaurant(0)
+    }
   }
 
   useEffect(() => {
@@ -56,10 +65,10 @@ export default function MeettheChef() {
     <div className="container">
       <h4 className="text-black fw-bold text-center">Our Homechefs are the best at cooking</h4>
       <div className="d-flex justify-content-end">
-        <button type="button" onClick={incrementSlide} className='btn btn-round mr-1'>
+        <button type="button" onClick={decrementSlide} className='btn btn-round mr-1'>
           <FaChevronLeft size={16} color="#FFF" />
         </button>
-        <button type="button" className='btn btn-round ml-1'>
+        <button type="button" onClick={incrementSlide} className='btn btn-round ml-1'>
           <FaChevronRight size={16} color="#fff" />
         </button>
       </div>
