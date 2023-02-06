@@ -574,3 +574,12 @@ h4 {
   margin: 4px;
   border-radius:50%
 }
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .lg-features {
+    display: none;
+  }
+  .sm-features{
+    display: block;
+  }
+}

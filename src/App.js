@@ -33,11 +33,21 @@ function Home() {
     setRestaurant(data);
     setLoaded(false)
   };
+  useEffect(() => {
+    let componentMounted = true
+    if (componentMounted) {
+      fetchRestaurant()
+    }
+  
+    return () => {
+      componentMounted=false
+    }
+  }, [loaded])
+  
 
   useEffect(() => {
     let componentMounted = true;
     if (componentMounted) {
-      fetchRestaurant()
       setShow(true);
     }
     return () => {
@@ -57,7 +67,7 @@ function Home() {
           <HowItWorks />
           <Values />
           <MeettheChef restaurant={restaurant} />
-          {/* <Featured /> */}
+          <Featured />
           <HomeSafety />
           <Footer />
         </div>
