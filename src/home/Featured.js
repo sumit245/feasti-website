@@ -85,7 +85,7 @@ export default function Featured() {
 
   return (
     <div className="container justify-content-center">
-      <h4 className="text-black fw-bold text-center">Features</h4>
+      <h5 className="text-black fw-bold text-center">Features</h5>
       <div className="row justify-content-center my-4 lg-features">
         <div className="col-sm-4">
           <div className="row my-5 justify-content-end">
