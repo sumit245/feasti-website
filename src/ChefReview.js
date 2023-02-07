@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Quotation from './assets/quotation.svg';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 function shuffle(array) {
   let currentIndex = array.length,
@@ -20,37 +21,52 @@ function shuffle(array) {
 
 export default function ChefReview() {
   const [restaurant, setRestaurant] = useState([]);
-  const [loaded, setLoaded] = useState(false);
+  const [activeRestaurant, setActiveRestaurant] = useState({
+    documents: [
+      { name: "", profile_image: "" },
+      { name: "", banner_image: "" },
+    ],
+    about: "",
+  })
+  const [loaded, setLoaded] = useState(true);
+
   const fetchRestaurant = async () => {
     const response = await fetch('https://feasti.com/api/newrest/', {
       method: 'GET',
+      headers: { "Access-Control-Allow-Origin": "*" },
+      cache: true
     });
     const data = await response.json();
     let rest = shuffle(data);
     rest.length = 2;
     setRestaurant(rest);
+    setActiveRestaurant(rest[0])
     setLoaded(true);
   };
 
   useEffect(() => {
     let Mounted = true;
-    fetchRestaurant();
+    if (Mounted) {
+      fetchRestaurant();
+    }
     return () => {
       Mounted = false;
     };
   }, []);
 
+  const incrementSlide = () => { }
+  const decrementSlide = () => { }
+
   if (loaded) {
     return (
       <div className="container my-4">
-        <div className="row mx-4 my-4">
-          <div className="bordered-benefits mx-5">
+        <div className="row">
+          <div className="bordered-benefits">
             <div className="row">
-              <div className="text-justify p-4">
-                <h6>
-                  <strong>Most Flexible Plans</strong>
+              <div className="text-justify">
+                <h6 className='fw-bold text-black'>Most Flexible Plans
                 </h6>
-                <ul>
+                <ul className='px-4'>
                   <li>
                     <span className="text-black">
                       Create your own menu, update and change prices whenever
@@ -72,14 +88,11 @@ export default function ChefReview() {
               </div>
             </div>
           </div>
-
-          <div className="bordered-benefits mx-5">
+          <div className="bordered-benefits">
             <div className="row">
-              <div className="text-justify p-4">
-                <h6>
-                  <strong>Build a successful business</strong>
-                </h6>
-                <ul>
+              <div className="text-justify">
+                <h6 className='fw-bold text-black'>Build a successful business</h6>
+                <ul className='px-4'>
                   <li>
                     <span className="text-black">
                       Get paid for what you sell.
@@ -100,9 +113,9 @@ export default function ChefReview() {
             </div>
           </div>
         </div>
-        <div className="row mx-4 my-4">
+        {/* <div className="row my-4 lg-review">
           {restaurant.map((data, key) => (
-            <div className="bordered-img mx-5" key={key}>
+            <div className="bordered-img" key={key}>
               <img
                 src={data.documents[0].restaurant_image}
                 style={{
@@ -118,7 +131,7 @@ export default function ChefReview() {
             </div>
           ))}
         </div>
-        <div className="row mx-4 my-4">
+        <div className="row my-4 lg-review">
           <div className="bordered-review mx-5">
             <div className="row">
               <div className="text-justify p-4">
@@ -177,6 +190,51 @@ export default function ChefReview() {
                 </strong>
               </div>
             </div>
+          </div>
+        </div> */}
+        <div className="d-flex justify-content-end">
+          <button type="button" onClick={decrementSlide} className='btn btn-round mr-1'>
+            <FaChevronLeft size={16} color="#FFF" />
+          </button>
+          <button type="button" onClick={incrementSlide} className='btn btn-round ml-1'>
+            <FaChevronRight size={16} color="#fff" />
+          </button>
+        </div>
+        <div className="card sm-review">
+          <img
+            src={require('./assets/profile_img.jpg')}
+            style={{
+              height: 180,
+              objectFit: 'cover',
+            }}
+            className="card-img-top"
+            alt="Banner"
+            loading="lazy"
+          />
+          <div className="card-body">
+            <h6 className='card-subtitle'>
+              <img
+                src={Quotation}
+                alt="chef-1"
+                loading="lazy"
+                style={{ height: 20, width: 20 }}
+              />
+              Capital Grill Broiles<br/>
+              <span style={{fontSize:10}}>Dallas, Tx | Joined in 2022</span>
+            </h6>
+            
+            <p
+              className="text-black lead text-justify"
+              style={{ fontSize: 14 }}
+            >
+              I have always been passionate about cooking, it gives me a
+              certain joy when I’m cooking for people. Joining Feasti as a
+              chef gave me the opportunity to prepare a variety of dishes in
+              my very own kitchen and share it with people who love homemade
+              food as much as me! Over the short time that I have been a
+              Feasti chef partner, they have become an extension of my
+              kitchen, constantly communicating with me and giving feedback.
+            </p>
           </div>
         </div>
       </div>

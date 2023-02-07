@@ -235,6 +235,7 @@ body::-webkit-scrollbar-thumb {
   border: #feaa1a solid 2px;
   cursor: pointer;
 }
+
 .bordered-review {
   background-color: #fff;
   margin-top: -160px;
@@ -250,6 +251,23 @@ body::-webkit-scrollbar-thumb {
   background-color: #fff;
   max-width: 40%;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .bordered-benefits {
+    max-width: 100%;
+    color: red;
+  }
+  .bordered-img {
+    max-width: 100%;
+  }
+  .lg-review {
+    display: none;
+  }
+  .sm-review{
+    display: block;
+  }
+}
+
 li {
   display: list-item;
   list-style-type: '✓';
@@ -496,6 +514,19 @@ footer > .bg-dark {
 
 .slider {
   background: url('./assets/image_bg.png') no-repeat;
+  background-size: contain;
+  width: calc(100%-12px);
+  max-width: 600px;
+  max-height: 600px;
+  margin-right: 0;
+  margin: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-chef {
+  background: url('./assets/profile_img.jpg') no-repeat;
   background-size: contain;
   width: calc(100%-12px);
   max-width: 600px;

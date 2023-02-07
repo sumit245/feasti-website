@@ -8,7 +8,7 @@ export default function HomeSafety() {
       <h4 className="text-black fw-bold text-center">
         Our commitments to food safety
       </h4>
-      <div className="my-4 mx-2">
+      <div className="my-2 mx-2">
         <p className="text-justify">
           {' '}
           We strive to provide you with fresh, homemade dishes that we would

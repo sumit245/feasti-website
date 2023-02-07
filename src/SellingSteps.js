@@ -10,10 +10,7 @@ export default function SellingSteps({ navigation }) {
   return (
     <>
       <div className="bg-light py-3 px-4">
-        <div className="row mx-1 my-4 justify-content-center">
-          <h4 className="text-center">How to sell on Feasti</h4>
-        </div>
-
+        <h4 className="text-black fw-bold text-center">How to sell on Feasti</h4>
         <div class="stepper-wrapper">
           <div class="stepper-item completed">
             <div class="step-counter">1</div>

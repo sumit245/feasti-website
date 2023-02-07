@@ -17,11 +17,11 @@ export default function Becomeachef() {
       <HeroChef />
       <ChefReview />
       <SellingSteps />
-      <PaymentStructure />
+      {/* <PaymentStructure />
       <Help />
       <ChefFeatured/>
       <FoodSafety />
-      <FAQ/>
+      <FAQ/> */}
       <Footer />
     </div>
   );
