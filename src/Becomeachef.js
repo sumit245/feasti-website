@@ -20,8 +20,8 @@ export default function Becomeachef() {
       {/* <PaymentStructure />
       <Help />
       <ChefFeatured/>
-      <FoodSafety />
-      <FAQ/> */}
+      <FoodSafety /> */}
+      <FAQ/>
       <Footer />
     </div>
   );
