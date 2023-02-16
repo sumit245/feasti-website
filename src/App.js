@@ -16,34 +16,9 @@ import AdminCoupon from './home/AdminCoupon';
 import Values from './home/Values';
 import Featured from './home/Featured';
 import MeettheChef from './home/MeettheChef';
-import axios from 'axios';
 
 function Home() {
   const [show, setShow] = useState(false);
-  const [loaded, setLoaded] = useState(false)
-  const [restaurant,setRestaurant]=useState([])
-  const fetchRestaurant = async () => {
-    setLoaded(true)
-    const response = await axios.get('https://feasti.com/api/newrest', {
-      headers: { "Access-Control-Allow-Origin": "*" }
-    });
-    const data = response.data;
-    console.log('====================================');
-    console.log(data);
-    setRestaurant(data);
-    setLoaded(false)
-  };
-  useEffect(() => {
-    let componentMounted = true
-    if (componentMounted) {
-      fetchRestaurant()
-    }
-  
-    return () => {
-      componentMounted=false
-    }
-  }, [loaded])
-  
 
   useEffect(() => {
     let componentMounted = true;
@@ -54,7 +29,9 @@ function Home() {
       componentMounted = false;
     };
   }, []);
+
   const handleClose = (state) => setShow(state);
+
   return (
     <div style={{ width: '100%' }}>
       {show ? (
@@ -66,7 +43,7 @@ function Home() {
           <BannerCarousel />
           <HowItWorks />
           <Values />
-          <MeettheChef restaurant={restaurant} />
+          <MeettheChef />
           <Featured />
           <HomeSafety />
           <Footer />

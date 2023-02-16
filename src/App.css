@@ -368,7 +368,6 @@ li {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  background-color: #ededed;
   margin-right: 8px;
 }
 
@@ -617,13 +616,18 @@ h4 {
 }
 
 .accordion-button::after {
-  background-image: url('https://www.svgviewer.dev/static-svgs/16096/plus-circle.svg');
+  background-image:url('https://www.svgviewer.dev/static-svgs/16096/plus-circle.svg');   
   transform: scale(0.8) !important;
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url('https://www.svgrepo.com/show/50059/minus-circle.svg');
+  background-image: url("https://www.svgrepo.com/show/50059/minus-circle.svg");
 }
 .accordion {
   border: none;
   padding: 2px;
+}
+
+.btn-close{
+  background-color: rgb(255,255,255);
+  color:"#FFF";
 }

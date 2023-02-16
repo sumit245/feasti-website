@@ -36,7 +36,7 @@ export default function HeroChef() {
                 </div>
               </div>
               <img
-                src={require('../assets/user-home-final.png')}
+                src={require('../assets/chef_dashboard_final.png')}
                 className="hero-img"
                 height={360}
                 width="auto"

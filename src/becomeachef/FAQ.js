@@ -91,9 +91,9 @@ function FAQ() {
         </Accordion.Item>
       </Accordion>
       <div className='text-center my-4'>
-        <h6 className="text-uppercase">Still have any query?</h6>
-        <h6 className='text-dark fw-bold'> Feel free to contact our support team at</h6>
-        <h4 className="btn btn-danger text-white">support@feasti.com</h4>
+        <h6 className="text-uppercase my-2">Still have any query?</h6>
+        <h6 className='text-dark fw-bold my-2'> Feel free to contact our support team at</h6>
+        <h4 className="btn btn-danger text-white my-2">support@feasti.com</h4>
       </div>
 
     </div>
