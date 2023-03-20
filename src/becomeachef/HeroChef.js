@@ -1,8 +1,6 @@
 import React from 'react';
 import "../App.css"
-const iOSChefUrl = "https://apps.apple.com/us/app/feasti-chef/id6443444359";
-const iOSUrl = "https://apps.apple.com/us/app/feasti-homecooked-food/id1645705596"
-const androidUrl = 'https://play.google.com/store/apps';
+
 
 export default function HeroChef() {
   return (
@@ -36,10 +34,11 @@ export default function HeroChef() {
                 </div>
               </div>
               <img
-                src={require('../assets/user-home-final.png')}
+                src={require('../assets/chef_dashboard_final.png')}
                 className="hero-img"
                 height={360}
                 width="auto"
+                alt="Dashboard"
               />
             </div>
           </div>
@@ -55,7 +54,7 @@ export default function HeroChef() {
           Thanks to Feasti, you can now follow your passion to feed homemade
           food of your favourite cuisine and customise your menu. You can serve
           on the day whenever you are free to cook the specific meal.
-          <br/>
+          <br />
           <i>
             "Payments from feasti is received regulary direct to my bank account
             so i never run out of my pocket. -Happy Feasti Chef"

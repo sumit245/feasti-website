@@ -9,9 +9,9 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 const data = [
   {
-    title: "PERSONALIZE YOUR TASTEBUDS",
-    description: "Select meal of your choice with meal type, rating, a wide variety of cuisines.",
-    image: require("../assets/user-home-final.png")
+    title: "Track perform at fingertips",
+    description: "No need of separate book keeping of records as we provide a well sieved dashboard to fit your requirements.",
+    image: require("../assets/chef_dashboard_final.png")
   },
   {
     title: "EASY CHECKOUT",
@@ -194,7 +194,7 @@ export default function ChefFeatured() {
         </div>
       </div>
       <div className='row my-4 sm-features'>
-        <div className='d-flex justify-content-end'>
+        <div className='d-flex justify-content-end my-2'>
           <button type="button" onClick={decrementSlide} className='btn btn-round mr-1'>
             <FaChevronLeft size={16} color="#FFF" />
           </button>
@@ -206,8 +206,8 @@ export default function ChefFeatured() {
           <h6>
             <strong>{current.title}</strong>
           </h6>
-          <img src={current.image} style={{ width: "auto", height: "340px" }} />
-          <p className='text-center'>
+          <img src={current.image} style={{ width: "auto", height: "340px" }} alt="Description" />
+          <p className='text-center my-2'>
             {current.description}
           </p>
         </div>

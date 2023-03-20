@@ -208,7 +208,7 @@ export default function Featured() {
           <h6>
             <strong>{current.title}</strong>
           </h6>
-          <img src={current.image} style={{ width: "auto", height: "340px" }} />
+          <img src={current.image} style={{ width: "auto", height: "340px" }} alt="Description" />
           <p className='text-center'>
             {current.description}
           </p>

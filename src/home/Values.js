@@ -1,13 +1,6 @@
 import React from 'react';
-import {
-  GiBowlOfRice,
-  GiTakeMyMoney,
-  GiOpenedFoodCan,
-  GiEarthAmerica,
-  GiShakingHands,
-} from 'react-icons/gi';
+import { GiOpenedFoodCan, GiEarthAmerica } from 'react-icons/gi';
 
-import {MdDeliveryDining} from "react-icons/md"
 
 export default function Values() {
   return (
@@ -16,7 +9,7 @@ export default function Values() {
         {/* <p className="text-center">Feasti is specially designed for</p> */}
         <h3
           className="text-center"
-          style={{ textTransform: 'uppercase', fontSize: 20,fontWeight:'bold' }}
+          style={{ textTransform: 'uppercase', fontSize: 20, fontWeight: 'bold' }}
         >
           your home cooked foods made by local chefs
         </h3>
@@ -25,7 +18,7 @@ export default function Values() {
             <div className="row">
               <div className="col-lg-4 text-center">
                 <img src={require('../assets/eat_explore_enjoy.gif')} alt="enjoy your food" height={64} width={64} />
-                
+
               </div>
               <div className="col-lg-8 text-center">
                 <p>

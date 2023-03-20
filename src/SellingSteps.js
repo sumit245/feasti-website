@@ -11,10 +11,10 @@ export default function SellingSteps({ navigation }) {
     <>
       <div className="bg-light py-3 px-4">
         <h5 className="text-black fw-bold text-center">How to sell on Feasti</h5>
-        <div class="stepper-wrapper">
-          <div class="stepper-item completed">
-            <div class="step-counter">1</div>
-            <div class="step-name">
+        <div className="stepper-wrapper">
+          <div className="stepper-item completed">
+            <div className="step-counter">1</div>
+            <div className="step-name">
               <h6
                 className="text-center mt-2 mb-3"
                 style={{ fontWeight: 'bolder', color: '#666' }}
@@ -34,9 +34,9 @@ export default function SellingSteps({ navigation }) {
               </div>
             </div>
           </div>
-          <div class="stepper-item completed">
-            <div class="step-counter">2</div>
-            <div class="step-name">
+          <div className="stepper-item completed">
+            <div className="step-counter">2</div>
+            <div className="step-name">
               <h6
                 className="text-center mt-2 mb-3"
                 style={{ fontWeight: 'bolder', color: '#666' }}
@@ -50,9 +50,9 @@ export default function SellingSteps({ navigation }) {
               </div>
             </div>
           </div>
-          <div class="stepper-item completed">
-            <div class="step-counter">3</div>
-            <div class="step-name">
+          <div className="stepper-item completed">
+            <div className="step-counter">3</div>
+            <div className="step-name">
               <h6
                 className="text-center mt-2 mb-3"
                 style={{ fontWeight: 'bolder', color: '#666' }}
@@ -66,9 +66,9 @@ export default function SellingSteps({ navigation }) {
               </div>
             </div>
           </div>
-          <div class="stepper-item completed">
-            <div class="step-counter">4</div>
-            <div class="step-name">
+          <div className="stepper-item completed">
+            <div className="step-counter">4</div>
+            <div className="step-name">
               <h6
                 className="text-center mt-2 mb-3"
                 style={{ fontWeight: 'bolder', color: '#666' }}
@@ -83,9 +83,9 @@ export default function SellingSteps({ navigation }) {
               </div>
             </div>
           </div>
-          <div class="stepper-item completed">
-            <div class="step-counter">5</div>
-            <div class="step-name">
+          <div className="stepper-item completed">
+            <div className="step-counter">5</div>
+            <div className="step-name">
               <h6
                 className="text-center mt-2 mb-3"
                 style={{ fontWeight: 'bolder', color: '#666' }}
@@ -117,8 +117,9 @@ export default function SellingSteps({ navigation }) {
           </div>
         </div>
       </div>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header className="bg-dark color-white" closeButton>
+      <Modal show={show} onHide={handleClose} >
+        <Modal.Header className="bg-dark text-white"
+          closeButton >
           <Modal.Title className="text-white">Sign up now</Modal.Title>
         </Modal.Header>
         <Modal.Body className="bg-dark">
