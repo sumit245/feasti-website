@@ -6,7 +6,7 @@ export default function AdminCoupon({ visible, closer }) {
   const [promo_code, setPromoCode] = useState('');
   const [discount, setDiscount] = useState('');
   const fetchAdminCoupon = async () => {
-    const response = await fetch('https://feasti.com/api/admin-coupon/');
+    const response = await fetch('api/admin-coupon/');
     const data = await response.json();
     setDiscount(data.coupons[0].discount);
     setPromoCode(data.coupons[0].promo_code);

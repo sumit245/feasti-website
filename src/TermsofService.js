@@ -10,7 +10,7 @@ const options = {
   standardFontDataUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/standard_fonts`,
 };
 export default function TermsofService() {
-  const [file, setFile] = useState("./tnc.pdf");
+  const [file] = useState("./tnc.pdf");
   const [numPages, setNumPages] = useState(null);
   useEffect(() => {
     let componentMount = true;

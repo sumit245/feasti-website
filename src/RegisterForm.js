@@ -27,18 +27,9 @@ export default function RegisterForm() {
 
   const onSubmit = async () => {
     setLoading(true);
-    const response = await axios.post(
-      "https://feasti.com/api/partnerrequest/",
-      state
-    );
-    const { status, msg } = response.data;
-    if (status === 200) {
-      setLoading(false);
-      alert("Request submitted succesfully");
-    } else if (status === 403) {
-      setLoading(false);
-      alert(msg);
-    }
+    await axios.post("/api/partnerrequest/", state);
+    setLoading(false);
+    alert("Request submitted succesfully");
   };
 
   return (

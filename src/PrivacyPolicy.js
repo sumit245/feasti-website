@@ -11,7 +11,7 @@ const options = {
 };
 
 export default function PrivacyPoilcy() {
-  const [file, setFile] = useState('./pp.pdf');
+  const [file] = useState('./pp.pdf');
   const [numPages, setNumPages] = useState(null);
   useEffect(() => {
     let componentMount = true;

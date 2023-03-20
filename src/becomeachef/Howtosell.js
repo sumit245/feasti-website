@@ -1,6 +1,5 @@
 import Cooking from '../assets/cooking.gif';
 import FoodDelivery from '../assets/enjoy.png';
-import Explore from '../assets/explore_food.png';
 import RegisterForm from '../RegisterForm';
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';

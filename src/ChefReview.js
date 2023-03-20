@@ -31,7 +31,7 @@ export default function ChefReview() {
   const [loaded, setLoaded] = useState(true);
 
   const fetchRestaurant = async () => {
-    const response = await fetch('https://feasti.com/api/newrest/', {
+    const response = await fetch('/api/newrest/', {
       method: 'GET',
       headers: { "Access-Control-Allow-Origin": "*" },
       cache: true
