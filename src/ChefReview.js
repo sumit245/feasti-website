@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Quotation from './assets/quotation.svg';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
+import axios from 'axios';
 
 function shuffle(array) {
   let currentIndex = array.length,
@@ -31,12 +32,8 @@ export default function ChefReview() {
   const [loaded, setLoaded] = useState(true);
 
   const fetchRestaurant = async () => {
-    const response = await fetch('/api/newrest/', {
-      method: 'GET',
-      headers: { "Access-Control-Allow-Origin": "*" },
-      cache: true
-    });
-    const data = await response.json();
+    const response = await axios.get('/api/newrest/')
+    const data = await response.data;
     let rest = shuffle(data);
     rest.length = 2;
     setRestaurant(rest);
@@ -219,10 +216,10 @@ export default function ChefReview() {
                 loading="lazy"
                 style={{ height: 20, width: 20 }}
               />
-              Capital Grill Broiles<br/>
-              <span style={{fontSize:10}}>Dallas, Tx | Joined in 2022</span>
+              Capital Grill Broiles<br />
+              <span style={{ fontSize: 10 }}>Dallas, Tx | Joined in 2022</span>
             </h6>
-            
+
             <p
               className="text-black lead text-justify"
               style={{ fontSize: 14 }}

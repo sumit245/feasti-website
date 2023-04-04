@@ -1,10 +1,11 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 export default function HeaderTop() {
   const [discount, setDiscount] = useState(0);
   const fetchAdminCoupon = async () => {
-    const response = await fetch('api/admin-coupon/');
-    const data = await response.json();
+    const response = await axios.get('/api/admin-coupon/')
+    const data = await response.data;
     setDiscount(data.coupons[0].discount);
   };
   useEffect(() => {

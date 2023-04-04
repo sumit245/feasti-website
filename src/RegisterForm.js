@@ -27,7 +27,7 @@ export default function RegisterForm() {
 
   const onSubmit = async () => {
     setLoading(true);
-    await axios.post("/api/partnerrequest/", state);
+    await axios.post("/api/partnerrequest/", state)
     setLoading(false);
     alert("Request submitted succesfully");
   };

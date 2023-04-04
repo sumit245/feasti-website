@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Modal } from 'react-bootstrap';
 
@@ -6,8 +7,10 @@ export default function AdminCoupon({ visible, closer }) {
   const [promo_code, setPromoCode] = useState('');
   const [discount, setDiscount] = useState('');
   const fetchAdminCoupon = async () => {
-    const response = await fetch('api/admin-coupon/');
-    const data = await response.json();
+    const response = await axios.get('/api/admin-coupon/')
+
+    const data = await response.data;
+    console.log(data)
     setDiscount(data.coupons[0].discount);
     setPromoCode(data.coupons[0].promo_code);
   };
